@@ -35,6 +35,11 @@ function Mentions() {
               <br />
               Téléphone : {SITE.phone}
               <br />
+              E-mail :{" "}
+              <a href={SITE.emailHref} className="link-underline">
+                {SITE.email}
+              </a>
+              <br />
               N° RPPS : {SITE.rpps} · N° ADELI : {SITE.adeli}
             </p>
           </div>
