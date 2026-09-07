@@ -31,7 +31,10 @@ function Entreprises() {
       <section className="mx-auto max-w-6xl px-6 pb-24">
         <div className="grid gap-px bg-border md:grid-cols-2">
           {ENTREPRISE_SERVICES.map((s, i) => (
-            <article key={s.title} className="bg-background p-8 md:p-10">
+            <article
+              key={s.title}
+              className="border-t-4 border-accent bg-secondary/60 p-8 md:p-10"
+            >
               <p className="eyebrow">{String(i + 1).padStart(2, "0")}</p>
               <h2 className="mt-4 text-2xl leading-snug">{s.title}</h2>
               <p className="mt-4 leading-relaxed text-muted-foreground">{s.text}</p>

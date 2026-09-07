@@ -35,7 +35,8 @@ function About() {
           className="aspect-[3/4] w-full object-cover"
           loading="lazy"
         />
-        <div className="space-y-6 text-lg leading-relaxed text-muted-foreground">
+          <div className="border-l-2 border-accent pl-7 text-lg leading-relaxed text-muted-foreground md:pl-10">
+            <div className="space-y-6">
           <p>
             J'ai été salariée pendant dix-sept ans avant de devenir psychologue du travail. C'est de
             là que vient ma façon de travailler : je connais les contraintes réelles des
@@ -66,7 +67,7 @@ function About() {
                 key={f.year + f.label}
                 className="flex flex-col gap-1 border-b border-border pb-5 sm:flex-row sm:gap-10"
               >
-                <span className="w-16 shrink-0 text-sm text-muted-foreground">{f.year}</span>
+                <span className="w-16 shrink-0 text-sm font-medium text-primary">{f.year}</span>
                 <span className="leading-relaxed">{f.label}</span>
               </li>
             ))}
@@ -87,6 +88,7 @@ function About() {
               Exercice en cabinet à {SITE.city} depuis 2020 · N° RPPS {SITE.rpps} · N° ADELI{" "}
               {SITE.adeli}
             </p>
+            </div>
           </div>
         </div>
       </section>

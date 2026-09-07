@@ -12,13 +12,17 @@ export function PageIntro({
   children?: ReactNode;
 }) {
   return (
-    <section className="mx-auto max-w-6xl px-6 pb-16 pt-20 md:pt-28">
-      <p className="eyebrow rise">{eyebrow}</p>
-      <h1 className="rise mt-5 max-w-3xl text-4xl leading-[1.08] md:text-6xl">{title}</h1>
-      {lead && (
-        <p className="rise mt-7 max-w-2xl text-lg leading-relaxed text-muted-foreground">{lead}</p>
-      )}
-      {children && <div className="rise mt-9">{children}</div>}
+    <section className="mb-16 bg-primary text-primary-foreground md:mb-20">
+      <div className="mx-auto max-w-6xl px-6 pb-16 pt-20 md:pb-20 md:pt-28">
+        <p className="eyebrow rise !text-accent">{eyebrow}</p>
+        <h1 className="rise mt-5 max-w-3xl text-4xl leading-[1.08] md:text-6xl">{title}</h1>
+        {lead && (
+          <p className="rise mt-7 max-w-2xl text-lg leading-relaxed text-primary-foreground/75">
+            {lead}
+          </p>
+        )}
+        {children && <div className="rise mt-9">{children}</div>}
+      </div>
     </section>
   );
 }

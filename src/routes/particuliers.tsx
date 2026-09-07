@@ -52,7 +52,10 @@ function Particuliers() {
       <section className="mx-auto max-w-6xl px-6 pb-24">
         <div className="rule-top grid gap-px bg-border pt-px md:grid-cols-3">
           {SEANCES.map((s) => (
-            <article key={s.title} className="bg-background px-2 py-10 md:px-8">
+            <article
+              key={s.title}
+              className="border-t-4 border-accent bg-background px-5 py-10 md:px-8"
+            >
               <p className="eyebrow">{s.duration}</p>
               <h2 className="mt-4 text-2xl">{s.title}</h2>
               <p className="mt-4 leading-relaxed text-muted-foreground">{s.text}</p>
@@ -65,7 +68,7 @@ function Particuliers() {
         <div className="grid gap-14 md:grid-cols-[0.85fr_1.15fr]">
           <h2 className="text-3xl leading-tight md:text-4xl">Deux approches, un même cap</h2>
           <div className="space-y-8">
-            <div>
+            <div className="border-l-2 border-accent pl-6">
               <h3 className="text-xl">La thérapie TCC</h3>
               <p className="mt-3 leading-relaxed text-muted-foreground">
                 La thérapie cognitive et comportementale travaille sur le lien entre les pensées,
@@ -74,7 +77,7 @@ function Particuliers() {
                 de rôle, exercices d'exposition, mises en action entre les séances.
               </p>
             </div>
-            <div>
+            <div className="border-l-2 border-accent pl-6">
               <h3 className="text-xl">La thérapie EMDR</h3>
               <p className="mt-3 leading-relaxed text-muted-foreground">
                 L'EMDR s'adresse aux souvenirs traumatiques ou marquants qui continuent d'agir sur
@@ -91,7 +94,7 @@ function Particuliers() {
         <p className="eyebrow">Expertises et actes</p>
         <div className="mt-10 grid gap-px bg-border sm:grid-cols-2 lg:grid-cols-4">
           {EXPERTISES.map((item) => (
-            <article key={item.title} className="bg-background p-7">
+            <article key={item.title} className="bg-secondary/60 p-7">
               <h3 className="text-lg leading-snug">{item.title}</h3>
               <p className="mt-3 text-sm leading-relaxed text-muted-foreground">{item.text}</p>
             </article>
