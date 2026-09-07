@@ -10,33 +10,63 @@
 
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as EntreprisesRouteImport } from './routes/entreprises'
+import { Route as ParticuliersRouteImport } from './routes/particuliers'
+import { Route as QuiSuisJeRouteImport } from './routes/qui-suis-je'
 
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
   getParentRoute: () => rootRouteImport,
 } as any)
+const EntreprisesRoute = EntreprisesRouteImport.update({
+  id: '/entreprises',
+  path: '/entreprises',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ParticuliersRoute = ParticuliersRouteImport.update({
+  id: '/particuliers',
+  path: '/particuliers',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const QuiSuisJeRoute = QuiSuisJeRouteImport.update({
+  id: '/qui-suis-je',
+  path: '/qui-suis-je',
+  getParentRoute: () => rootRouteImport,
+} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/entreprises': typeof EntreprisesRoute
+  '/particuliers': typeof ParticuliersRoute
+  '/qui-suis-je': typeof QuiSuisJeRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/entreprises': typeof EntreprisesRoute
+  '/particuliers': typeof ParticuliersRoute
+  '/qui-suis-je': typeof QuiSuisJeRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/entreprises': typeof EntreprisesRoute
+  '/particuliers': typeof ParticuliersRoute
+  '/qui-suis-je': typeof QuiSuisJeRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/'
+  fullPaths: '/' | '/entreprises' | '/particuliers' | '/qui-suis-je'
   fileRoutesByTo: FileRoutesByTo
-  to: '/'
-  id: '__root__' | '/'
+  to: '/' | '/entreprises' | '/particuliers' | '/qui-suis-je'
+  id: '__root__' | '/' | '/entreprises' | '/particuliers' | '/qui-suis-je'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  EntreprisesRoute: typeof EntreprisesRoute
+  ParticuliersRoute: typeof ParticuliersRoute
+  QuiSuisJeRoute: typeof QuiSuisJeRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -48,11 +78,35 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/entreprises': {
+      id: '/entreprises'
+      path: '/entreprises'
+      fullPath: '/entreprises'
+      preLoaderRoute: typeof EntreprisesRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/particuliers': {
+      id: '/particuliers'
+      path: '/particuliers'
+      fullPath: '/particuliers'
+      preLoaderRoute: typeof ParticuliersRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/qui-suis-je': {
+      id: '/qui-suis-je'
+      path: '/qui-suis-je'
+      fullPath: '/qui-suis-je'
+      preLoaderRoute: typeof QuiSuisJeRouteImport
+      parentRoute: typeof rootRouteImport
+    }
   }
 }
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  EntreprisesRoute: EntreprisesRoute,
+  ParticuliersRoute: ParticuliersRoute,
+  QuiSuisJeRoute: QuiSuisJeRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
