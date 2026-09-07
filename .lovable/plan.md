@@ -19,7 +19,9 @@ Un site vitrine en français, avec deux parcours équilibrés : particuliers (th
 
 ## Style
 
-Bleu nuit profond et blanc cassé, repris de son visuel de marque, avec une touche dorée discrète. Typographie sobre et lisible, respiration généreuse, ton apaisant et professionnel. Site adapté au téléphone.
+Moderne et soigné, sans l'effet « site fabriqué à la chaîne ». Bleu nuit profond et blanc cassé repris de son visuel de marque, une touche de sable/doré très discrète. Grands titres en caractères élégants, textes très lisibles, beaucoup de respiration, images en pleine largeur, animations légères à l'apparition. Aucun dégradé violet ni illustration générique. Site adapté au téléphone.
+
+Avant de construire, je vous proposerai trois maquettes visuelles de la page d'accueil pour que vous choisissiez celle qui plaît le plus.
 
 ## Éléments techniques
 
