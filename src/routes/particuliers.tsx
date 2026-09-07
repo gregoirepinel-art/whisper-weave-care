@@ -44,8 +44,8 @@ function Particuliers() {
         title="Un espace pour déposer, comprendre et agir."
         lead="Consulter un psychologue ne signifie pas que vous êtes faible, mais que vous êtes suffisamment fort pour prendre en charge vos propres souffrances, interrogations et émotions, sans les faire supporter à vos proches."
       >
-        <a href={SITE.doctolib} target="_blank" rel="noreferrer" className="btn-primary">
-          Prendre rendez-vous
+        <a href={SITE.doctolib} target="_blank" rel="noreferrer" className="btn-accent">
+          Réserver sur Doctolib <span aria-hidden="true">→</span>
         </a>
       </PageIntro>
 
@@ -102,20 +102,24 @@ function Particuliers() {
         </div>
       </section>
 
-      <section className="mx-auto max-w-6xl px-6 pb-24">
-        <div className="rule-top flex flex-col gap-6 pt-12 sm:flex-row sm:items-end sm:justify-between">
+      <section className="bg-primary text-primary-foreground">
+        <div className="mx-auto flex max-w-6xl flex-col gap-8 px-6 py-14 sm:flex-row sm:items-center sm:justify-between md:py-16">
           <div>
-            <h2 className="text-3xl md:text-4xl">Prendre rendez-vous</h2>
-            <p className="mt-3 max-w-xl leading-relaxed text-muted-foreground">
+            <p className="eyebrow !text-accent">Consultations au cabinet</p>
+            <h2 className="mt-3 text-3xl md:text-4xl">Votre rendez-vous en quelques clics</h2>
+            <p className="mt-3 max-w-xl leading-relaxed text-primary-foreground/75">
               Les consultations ne sont pas remboursées par la Sécurité sociale. Paiement par carte
               ou en espèces. Je ne reçois pas les enfants de moins de 16 ans.
             </p>
           </div>
           <div className="flex flex-wrap gap-3">
-            <a href={SITE.doctolib} target="_blank" rel="noreferrer" className="btn-primary">
-              Doctolib
+            <a href={SITE.doctolib} target="_blank" rel="noreferrer" className="btn-accent">
+              Réserver sur Doctolib <span aria-hidden="true">→</span>
             </a>
-            <Link to="/tarifs" className="btn-ghost">
+            <Link
+              to="/tarifs"
+              className="inline-flex items-center rounded-full border border-primary-foreground/35 px-6 py-3 text-sm transition-colors hover:border-primary-foreground"
+            >
               Voir les tarifs
             </Link>
           </div>
