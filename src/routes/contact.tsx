@@ -65,6 +65,14 @@ function Contact() {
             </a>
           </div>
           <div>
+            <p className="eyebrow">E-mail</p>
+            <p className="mt-4 leading-relaxed">
+              <a href={SITE.emailHref} className="link-underline">
+                {SITE.email}
+              </a>
+            </p>
+          </div>
+          <div>
             <p className="eyebrow">Horaires</p>
             <p className="mt-4 leading-relaxed">
               Du lundi au vendredi
