@@ -44,15 +44,18 @@ function Particuliers() {
         title="Un espace pour déposer, comprendre et agir."
         lead="Consulter un psychologue ne signifie pas que vous êtes faible, mais que vous êtes suffisamment fort pour prendre en charge vos propres souffrances, interrogations et émotions, sans les faire supporter à vos proches."
       >
-        <a href={SITE.doctolib} target="_blank" rel="noreferrer" className="btn-primary">
-          Prendre rendez-vous
+        <a href={SITE.doctolib} target="_blank" rel="noreferrer" className="btn-accent">
+          Réserver sur Doctolib <span aria-hidden="true">→</span>
         </a>
       </PageIntro>
 
       <section className="mx-auto max-w-6xl px-6 pb-24">
         <div className="rule-top grid gap-px bg-border pt-px md:grid-cols-3">
           {SEANCES.map((s) => (
-            <article key={s.title} className="bg-background px-2 py-10 md:px-8">
+            <article
+              key={s.title}
+              className="border-t-4 border-accent bg-background px-5 py-10 md:px-8"
+            >
               <p className="eyebrow">{s.duration}</p>
               <h2 className="mt-4 text-2xl">{s.title}</h2>
               <p className="mt-4 leading-relaxed text-muted-foreground">{s.text}</p>
@@ -65,7 +68,7 @@ function Particuliers() {
         <div className="grid gap-14 md:grid-cols-[0.85fr_1.15fr]">
           <h2 className="text-3xl leading-tight md:text-4xl">Deux approches, un même cap</h2>
           <div className="space-y-8">
-            <div>
+            <div className="border-l-2 border-accent pl-6">
               <h3 className="text-xl">La thérapie TCC</h3>
               <p className="mt-3 leading-relaxed text-muted-foreground">
                 La thérapie cognitive et comportementale travaille sur le lien entre les pensées,
@@ -74,7 +77,7 @@ function Particuliers() {
                 de rôle, exercices d'exposition, mises en action entre les séances.
               </p>
             </div>
-            <div>
+            <div className="border-l-2 border-accent pl-6">
               <h3 className="text-xl">La thérapie EMDR</h3>
               <p className="mt-3 leading-relaxed text-muted-foreground">
                 L'EMDR s'adresse aux souvenirs traumatiques ou marquants qui continuent d'agir sur
@@ -91,7 +94,7 @@ function Particuliers() {
         <p className="eyebrow">Expertises et actes</p>
         <div className="mt-10 grid gap-px bg-border sm:grid-cols-2 lg:grid-cols-4">
           {EXPERTISES.map((item) => (
-            <article key={item.title} className="bg-background p-7">
+            <article key={item.title} className="bg-secondary/60 p-7">
               <h3 className="text-lg leading-snug">{item.title}</h3>
               <p className="mt-3 text-sm leading-relaxed text-muted-foreground">{item.text}</p>
             </article>
@@ -99,20 +102,24 @@ function Particuliers() {
         </div>
       </section>
 
-      <section className="mx-auto max-w-6xl px-6 pb-24">
-        <div className="rule-top flex flex-col gap-6 pt-12 sm:flex-row sm:items-end sm:justify-between">
+      <section className="bg-primary text-primary-foreground">
+        <div className="mx-auto flex max-w-6xl flex-col gap-8 px-6 py-14 sm:flex-row sm:items-center sm:justify-between md:py-16">
           <div>
-            <h2 className="text-3xl md:text-4xl">Prendre rendez-vous</h2>
-            <p className="mt-3 max-w-xl leading-relaxed text-muted-foreground">
+            <p className="eyebrow !text-accent">Consultations au cabinet</p>
+            <h2 className="mt-3 text-3xl md:text-4xl">Votre rendez-vous en quelques clics</h2>
+            <p className="mt-3 max-w-xl leading-relaxed text-primary-foreground/75">
               Les consultations ne sont pas remboursées par la Sécurité sociale. Paiement par carte
               ou en espèces. Je ne reçois pas les enfants de moins de 16 ans.
             </p>
           </div>
           <div className="flex flex-wrap gap-3">
-            <a href={SITE.doctolib} target="_blank" rel="noreferrer" className="btn-primary">
-              Doctolib
+            <a href={SITE.doctolib} target="_blank" rel="noreferrer" className="btn-accent">
+              Réserver sur Doctolib <span aria-hidden="true">→</span>
             </a>
-            <Link to="/tarifs" className="btn-ghost">
+            <Link
+              to="/tarifs"
+              className="inline-flex items-center rounded-full border border-primary-foreground/35 px-6 py-3 text-sm transition-colors hover:border-primary-foreground"
+            >
               Voir les tarifs
             </Link>
           </div>

@@ -42,7 +42,7 @@ function Tarifs() {
                   </p>
                 )}
               </div>
-              <p className="font-display text-3xl whitespace-nowrap">{t.price}</p>
+               <p className="font-display text-3xl whitespace-nowrap text-primary">{t.price}</p>
             </li>
           ))}
         </ul>
@@ -50,21 +50,21 @@ function Tarifs() {
 
       <section className="mx-auto max-w-6xl px-6 pb-24">
         <div className="grid gap-10 md:grid-cols-3">
-          <div>
+          <div className="border-l-2 border-accent pl-6">
             <p className="eyebrow">Paiement</p>
             <p className="mt-4 leading-relaxed text-muted-foreground">
               Par carte bancaire ou en espèces, à la fin de la séance. La carte Vitale n'est pas
               acceptée.
             </p>
           </div>
-          <div>
+          <div className="border-l-2 border-accent pl-6">
             <p className="eyebrow">Annulation</p>
             <p className="mt-4 leading-relaxed text-muted-foreground">
               Merci de prévenir au moins 48 heures à l'avance afin que le créneau puisse être
               proposé à quelqu'un d'autre.
             </p>
           </div>
-          <div>
+          <div className="border-l-2 border-accent pl-6">
             <p className="eyebrow">Entreprises</p>
             <p className="mt-4 leading-relaxed text-muted-foreground">
               Les interventions en entreprise font l'objet d'un devis établi après un premier

@@ -32,7 +32,7 @@ function Contact() {
 
       <section className="mx-auto max-w-6xl px-6 pb-20">
         <div className="rule-top grid gap-10 pt-12 md:grid-cols-3">
-          <div>
+          <div className="border-l-2 border-accent pl-5">
             <p className="eyebrow">Adresse</p>
             <p className="mt-4 leading-relaxed">
               {SITE.street}
@@ -48,7 +48,7 @@ function Contact() {
               Ouvrir dans Maps
             </a>
           </div>
-          <div>
+          <div className="border-l-2 border-accent pl-5">
             <p className="eyebrow">Téléphone</p>
             <p className="mt-4 leading-relaxed">
               <a href={SITE.phoneHref} className="link-underline">
@@ -64,7 +64,7 @@ function Contact() {
               Prendre rendez-vous en ligne
             </a>
           </div>
-          <div>
+          <div className="border-l-2 border-accent pl-5">
             <p className="eyebrow">E-mail</p>
             <p className="mt-4 leading-relaxed">
               <a href={SITE.emailHref} className="link-underline">
@@ -72,7 +72,7 @@ function Contact() {
               </a>
             </p>
           </div>
-          <div>
+          <div className="border-l-2 border-accent pl-5">
             <p className="eyebrow">Horaires</p>
             <p className="mt-4 leading-relaxed">
               Du lundi au vendredi

@@ -35,25 +35,27 @@ function About() {
           className="aspect-[3/4] w-full object-cover"
           loading="lazy"
         />
-        <div className="space-y-6 text-lg leading-relaxed text-muted-foreground">
-          <p>
-            J'ai été salariée pendant dix-sept ans avant de devenir psychologue du travail. C'est de
-            là que vient ma façon de travailler : je connais les contraintes réelles des
-            organisations, les jeux d'acteurs, et ce que traverse un collectif quand une situation
-            dérape.
-          </p>
-          <p>
-            Je suis là pour vous accompagner et vous conseiller dans vos situations professionnelles
-            et personnelles : transition de carrière, burn-out, confiance en soi, estime de soi,
-            affirmation de soi, communication. Ensemble, nous définissons vos objectifs et nous
-            mettons en place des méthodes et des outils adaptés — tests, jeux de rôle, exercices
-            entre les séances — pour les atteindre.
-          </p>
-          <p>
-            Si vous traversez une période de questionnement, si vous avez besoin de prendre du recul
-            ou de trouver du soutien, n'hésitez pas à me contacter pour que nous puissions
-            travailler ensemble.
-          </p>
+        <div className="border-l-2 border-accent pl-7 text-lg leading-relaxed text-muted-foreground md:pl-10">
+          <div className="space-y-6">
+            <p>
+              J'ai été salariée pendant dix-sept ans avant de devenir psychologue du travail. C'est
+              de là que vient ma façon de travailler : je connais les contraintes réelles des
+              organisations, les jeux d'acteurs, et ce que traverse un collectif quand une situation
+              dérape.
+            </p>
+            <p>
+              Je suis là pour vous accompagner et vous conseiller dans vos situations professionnelles
+              et personnelles : transition de carrière, burn-out, confiance en soi, estime de soi,
+              affirmation de soi, communication. Ensemble, nous définissons vos objectifs et nous
+              mettons en place des méthodes et des outils adaptés — tests, jeux de rôle, exercices
+              entre les séances — pour les atteindre.
+            </p>
+            <p>
+              Si vous traversez une période de questionnement, si vous avez besoin de prendre du recul
+              ou de trouver du soutien, n'hésitez pas à me contacter pour que nous puissions
+              travailler ensemble.
+            </p>
+          </div>
         </div>
       </section>
 
@@ -66,7 +68,7 @@ function About() {
                 key={f.year + f.label}
                 className="flex flex-col gap-1 border-b border-border pb-5 sm:flex-row sm:gap-10"
               >
-                <span className="w-16 shrink-0 text-sm text-muted-foreground">{f.year}</span>
+                <span className="w-16 shrink-0 text-sm font-medium text-primary">{f.year}</span>
                 <span className="leading-relaxed">{f.label}</span>
               </li>
             ))}
