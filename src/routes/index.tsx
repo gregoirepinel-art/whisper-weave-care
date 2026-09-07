@@ -20,7 +20,7 @@ export const Route = createFileRoute("/")({
         type: "application/ld+json",
         children: JSON.stringify({
           "@context": "https://schema.org",
-          "@type": "Psychological",
+          "@type": ["LocalBusiness", "MedicalBusiness"],
           name: "Karen Pinel — Psychologue",
           description,
           telephone: "+33699970408",
