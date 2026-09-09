@@ -54,12 +54,26 @@ function Mentions() {
           </div>
 
           <div>
-            <h2 className="text-xl">Hébergement</h2>
+            <h2 className="text-xl">Identification de l'activité</h2>
             <p className="mt-3 leading-relaxed text-muted-foreground">
-              Ce site est hébergé par Lovable. Les coordonnées complètes de l'hébergeur seront
-              précisées ici.
+              Entreprise individuelle — profession libérale.
+              <br />
+              N° SIRET : à compléter.
+              <br />
+              Assurance responsabilité civile professionnelle : à compléter.
+              <br />
+              TVA non applicable, article 293 B du Code général des impôts.
             </p>
           </div>
+
+          <div>
+            <h2 className="text-xl">Hébergement</h2>
+            <p className="mt-3 leading-relaxed text-muted-foreground">
+              Ce site est hébergé par Lovable Labs Incorporated, 2261 Market Street #5039, San
+              Francisco, CA 94114, États-Unis.
+            </p>
+          </div>
+
 
           <div>
             <h2 className="text-xl">Données personnelles</h2>

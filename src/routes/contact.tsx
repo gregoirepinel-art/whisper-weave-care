@@ -31,7 +31,7 @@ function Contact() {
       />
 
       <section className="mx-auto max-w-6xl px-6 pb-20">
-        <div className="rule-top grid gap-10 pt-12 md:grid-cols-3">
+        <div className="rule-top grid gap-10 pt-12 sm:grid-cols-2 lg:grid-cols-4">
           <div className="border-l-2 border-accent pl-5">
             <p className="eyebrow">Adresse</p>
             <p className="mt-4 leading-relaxed">

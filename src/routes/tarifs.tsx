@@ -83,9 +83,10 @@ function Tarifs() {
             </a>
             .
           </p>
-          <a href={SITE.doctolib} target="_blank" rel="noreferrer" className="btn-primary">
-            Prendre rendez-vous
+          <a href={SITE.doctolib} target="_blank" rel="noreferrer" className="btn-accent">
+            Prendre rendez-vous <span aria-hidden="true">→</span>
           </a>
+
         </div>
       </section>
     </>

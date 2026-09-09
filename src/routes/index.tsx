@@ -14,6 +14,8 @@ export const Route = createFileRoute("/")({
       { name: "description", content: description },
       { property: "og:title", content: title },
       { property: "og:description", content: description },
+      { property: "og:image", content: SITE.ogImage },
+      { name: "twitter:image", content: SITE.ogImage },
     ],
     scripts: [
       {
@@ -23,6 +25,9 @@ export const Route = createFileRoute("/")({
           "@type": ["LocalBusiness", "MedicalBusiness"],
           name: "Karen Pinel — Psychologue",
           description,
+          url: SITE.siteUrl,
+          image: SITE.ogImage,
+          email: SITE.email,
           telephone: "+33699970408",
           address: {
             "@type": "PostalAddress",
@@ -35,6 +40,7 @@ export const Route = createFileRoute("/")({
         }),
       },
     ],
+
   }),
   component: Home,
 });
@@ -58,9 +64,10 @@ function Home() {
             souffrance au travail.
           </p>
           <div className="rise mt-10 flex flex-wrap gap-3">
-            <a href={SITE.doctolib} target="_blank" rel="noreferrer" className="btn-primary">
-              Prendre rendez-vous
+            <a href={SITE.doctolib} target="_blank" rel="noreferrer" className="btn-accent">
+              Prendre rendez-vous <span aria-hidden="true">→</span>
             </a>
+
             <a href={SITE.phoneHref} className="btn-ghost">
               {SITE.phone}
             </a>
@@ -177,10 +184,16 @@ function Home() {
                 {SITE.phone}
               </a>
             </p>
+            <p className="mt-2 text-sm">
+              <a href={SITE.emailHref} className="link-underline break-all">
+                {SITE.email}
+              </a>
+            </p>
             <Link to="/contact" className="link-underline mt-3 inline-block text-sm">
               Écrire un message
             </Link>
           </div>
+
         </div>
       </section>
     </>
