@@ -15,7 +15,47 @@ export const SITE = {
   rpps: "10009165290",
   adeli: "379310956",
   hours: "Du lundi au vendredi · 9h00 – 12h00 / 14h00 – 19h00",
+  siteUrl: "https://whisper-weave-care.lovable.app",
+  ogImage:
+    "https://whisper-weave-care.lovable.app/__l5e/assets-v1/9def8940-0345-4c46-94a0-70b7605e0785/karen-pinel-signature.jpg",
+  siret: "",
 } as const;
+
+export const FAQ = [
+  {
+    q: "Les séances sont-elles remboursées ?",
+    a: "Les consultations de psychologue en libéral ne sont pas remboursées par l'Assurance Maladie et la carte Vitale n'est pas acceptée. En revanche, de nombreuses mutuelles prennent en charge tout ou partie des séances : demandez à la vôtre le nombre de séances couvertes par an. Une facture peut vous être remise sur demande.",
+  },
+  {
+    q: "Faut-il une ordonnance ou passer par mon médecin ?",
+    a: "Non. Vous pouvez prendre rendez-vous directement, sans prescription ni courrier d'adressage.",
+  },
+  {
+    q: "Ce que je dis reste-t-il confidentiel ?",
+    a: "Oui. Le secret professionnel s'applique à l'ensemble de ce qui se dit en séance, conformément au Code de déontologie des psychologues. Lors d'une intervention en entreprise, le cadre de confidentialité est défini par écrit avec toutes les parties avant le démarrage.",
+  },
+  {
+    q: "Combien de temps dure un suivi ?",
+    a: "Cela dépend de la demande. Une TCC se déroule souvent sur quelques mois, avec des objectifs définis ensemble dès les premières séances. En EMDR, le nombre de séances dépend du nombre et de l'ancienneté des souvenirs à retraiter. Nous faisons régulièrement le point ensemble.",
+  },
+  {
+    q: "Que se passe-t-il lors de la première séance ?",
+    a: "Elle dure environ une heure. Nous faisons le tour de ce qui vous amène, de votre histoire et de vos attentes, puis nous décidons ensemble de la suite : TCC, EMDR, ou les deux. Aucun engagement n'est demandé.",
+  },
+  {
+    q: "Comment annuler ou déplacer un rendez-vous ?",
+    a: "Prévenez au moins 48 heures à l'avance, par téléphone ou directement en ligne, afin que le créneau puisse être proposé à quelqu'un d'autre.",
+  },
+  {
+    q: "Recevez-vous les enfants et les adolescents ?",
+    a: "Je ne reçois pas les enfants de moins de 16 ans. Pour les plus jeunes, je peux vous orienter vers un collègue spécialisé.",
+  },
+  {
+    q: "Le cabinet est-il accessible ?",
+    a: "Le cabinet se situe au 1er étage, desservi par un ascenseur, avec un parking gratuit à proximité immédiate.",
+  },
+] as const;
+
 
 export const EXPERTISES = [
   {

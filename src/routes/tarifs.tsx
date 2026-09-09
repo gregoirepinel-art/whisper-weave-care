@@ -13,6 +13,8 @@ export const Route = createFileRoute("/tarifs")({
       { name: "description", content: description },
       { property: "og:title", content: title },
       { property: "og:description", content: description },
+      { property: "og:image", content: SITE.ogImage },
+      { name: "twitter:image", content: SITE.ogImage },
     ],
   }),
   component: Tarifs,
@@ -83,9 +85,10 @@ function Tarifs() {
             </a>
             .
           </p>
-          <a href={SITE.doctolib} target="_blank" rel="noreferrer" className="btn-primary">
-            Prendre rendez-vous
+          <a href={SITE.doctolib} target="_blank" rel="noreferrer" className="btn-accent">
+            Prendre rendez-vous <span aria-hidden="true">→</span>
           </a>
+
         </div>
       </section>
     </>

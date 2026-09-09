@@ -13,6 +13,8 @@ import appCss from "../styles.css?url";
 import { reportLovableError } from "../lib/lovable-error-reporting";
 import { Header } from "../components/site/Header";
 import { Footer } from "../components/site/Footer";
+import { MobileCallBar } from "../components/site/MobileCallBar";
+
 
 function NotFoundComponent() {
   return (
@@ -129,14 +131,16 @@ function RootComponent() {
 
   return (
     <QueryClientProvider client={queryClient}>
-      <div className="flex min-h-screen flex-col">
+      <div className="flex min-h-screen flex-col pb-[4.75rem] lg:pb-0">
         <Header />
         <main className="flex-1">
           {/* Required: nested routes render here. Removing <Outlet /> breaks all child routes. */}
           <Outlet />
         </main>
         <Footer />
+        <MobileCallBar />
       </div>
     </QueryClientProvider>
+
   );
 }

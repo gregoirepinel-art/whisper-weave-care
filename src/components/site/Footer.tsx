@@ -23,7 +23,13 @@ export function Footer() {
                 {SITE.phone}
               </a>
             </p>
+            <p className="mt-1">
+              <a href={SITE.emailHref} className="link-underline break-all">
+                {SITE.email}
+              </a>
+            </p>
             <p className="mt-3">{SITE.hours}</p>
+
           </div>
 
           <div className="text-sm leading-7 opacity-80">
@@ -50,10 +56,16 @@ export function Footer() {
                 </Link>
               </li>
               <li>
+                <Link to="/faq" className="link-underline">
+                  Questions fréquentes
+                </Link>
+              </li>
+              <li>
                 <Link to="/contact" className="link-underline">
                   Contact
                 </Link>
               </li>
+
               <li>
                 <Link to="/mentions-legales" className="link-underline">
                   Mentions légales

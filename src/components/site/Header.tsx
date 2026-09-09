@@ -8,7 +8,9 @@ const NAV = [
   { to: "/particuliers", label: "Particuliers" },
   { to: "/entreprises", label: "Entreprises" },
   { to: "/tarifs", label: "Tarifs" },
+  { to: "/faq", label: "Questions fréquentes" },
   { to: "/contact", label: "Contact" },
+
 ] as const;
 
 export function Header() {
@@ -35,9 +37,10 @@ export function Header() {
               {item.label}
             </Link>
           ))}
-          <a href={SITE.doctolib} target="_blank" rel="noreferrer" className="btn-primary">
+          <a href={SITE.doctolib} target="_blank" rel="noreferrer" className="btn-accent">
             Prendre rendez-vous
           </a>
+
         </nav>
 
         <button
@@ -76,10 +79,11 @@ export function Header() {
               href={SITE.doctolib}
               target="_blank"
               rel="noreferrer"
-              className="btn-primary mt-4 justify-center"
+              className="btn-accent mt-4 justify-center"
             >
               Prendre rendez-vous
             </a>
+
           </nav>
         </div>
       )}
