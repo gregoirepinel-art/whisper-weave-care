@@ -1,7 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { PageIntro } from "@/components/site/PageIntro";
 import { ContactForm } from "@/components/site/ContactForm";
-import { ENTREPRISE_SERVICES } from "@/lib/site";
+import { ENTREPRISE_SERVICES, SITE } from "@/lib/site";
 
 const title = "Prestations en entreprise — psychologue du travail à Tours";
 const description =
@@ -14,6 +14,8 @@ export const Route = createFileRoute("/entreprises")({
       { name: "description", content: description },
       { property: "og:title", content: title },
       { property: "og:description", content: description },
+      { property: "og:image", content: SITE.ogImage },
+      { name: "twitter:image", content: SITE.ogImage },
     ],
   }),
   component: Entreprises,

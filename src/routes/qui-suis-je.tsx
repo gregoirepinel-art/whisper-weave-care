@@ -14,6 +14,8 @@ export const Route = createFileRoute("/qui-suis-je")({
       { name: "description", content: description },
       { property: "og:title", content: title },
       { property: "og:description", content: description },
+      { property: "og:image", content: SITE.ogImage },
+      { name: "twitter:image", content: SITE.ogImage },
     ],
   }),
   component: About,
