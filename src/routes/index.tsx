@@ -61,7 +61,9 @@ function Home() {
           <p className="rise mt-8 max-w-xl text-lg leading-relaxed text-muted-foreground">
             Psychologue du travail, thérapeute en TCC et en EMDR.
             <br />
-            J'accompagne les personnes en consultation et les organisations.
+            J'interviens auprès des organisations du travail : enquêtes harcèlement, formations et audits risques psychosociaux.
+            <br />
+            J'accueille en consultation les personnes pour un accompagnement personnalisé.
           </p>
           <div className="rise mt-10 flex flex-wrap gap-3">
             <a href={SITE.doctolib} target="_blank" rel="noreferrer" className="btn-accent">
