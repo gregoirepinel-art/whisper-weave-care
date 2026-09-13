@@ -23,7 +23,7 @@ export const SITE = {
 export const FAQ = [
   {
     q: "Les séances sont-elles remboursées ?",
-    a: "Cela dépend du psychologue. Certains sont affiliés au parcours psy et peuvent proposer jusqu'à 12 séances prises en charge par la Sécurité sociale. Je ne suis pas affiliée à ce dispositif : les séances ne sont donc pas remboursées par la Sécurité sociale chez moi. En revanche, certaines mutuelles prennent en charge tout ou partie des séances : demandez à la vôtre le nombre de séances couvertes par an. Une facture peut vous être remise sur demande.",
+    a: "Le remboursement dépend de l'affiliation du psychologue au parcours psy. Je n'y suis pas affiliée : mes séances ne sont donc pas prises en charge par la Sécurité sociale. Certaines mutuelles couvrent néanmoins tout ou partie des séances : renseignez-vous auprès de la vôtre. Une facture peut vous être remise sur demande.",
   },
   {
     q: "Faut-il une ordonnance ou passer par mon médecin ?",
