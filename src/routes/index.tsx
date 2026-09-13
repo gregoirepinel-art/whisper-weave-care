@@ -59,9 +59,9 @@ function Home() {
             <span className="italic text-muted-foreground">laissent en suspens.</span>
           </h1>
           <p className="rise mt-8 max-w-xl text-lg leading-relaxed text-muted-foreground">
-            Psychologue du travail, thérapeute en TCC et en EMDR. J'accompagne les personnes en
-            consultation et les organisations sur le terrain — burn-out, stress, traumatismes,
-            souffrance au travail.
+            Psychologue du travail, thérapeute en TCC et en EMDR.
+            <br />
+            J'accompagne les personnes en consultation et les organisations.
           </p>
           <div className="rise mt-10 flex flex-wrap gap-3">
             <a href={SITE.doctolib} target="_blank" rel="noreferrer" className="btn-accent">
