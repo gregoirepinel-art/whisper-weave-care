@@ -98,8 +98,7 @@ function Home() {
             <p className="eyebrow">01 — Vous, à titre personnel</p>
             <h2 className="mt-5 text-3xl md:text-4xl">Consulter en TCC ou en EMDR</h2>
             <p className="mt-5 max-w-md leading-relaxed text-muted-foreground">
-              Un espace pour déposer ce qui pèse, comprendre ce qui se répète et mettre en place des
-              outils concrets. Séances individuelles et thérapie de couple.
+              Un espace d'écoute, d'échange, d'interrogation et de compréhension. Séances individuelles et thérapie de couple.
             </p>
             <span className="link-underline mt-8 inline-block text-sm">Découvrir le suivi</span>
           </Link>
