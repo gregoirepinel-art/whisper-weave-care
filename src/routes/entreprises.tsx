@@ -27,7 +27,7 @@ function Entreprises() {
       <PageIntro
         eyebrow="Entreprises et organisations"
         title="La psychologie du travail, sur le terrain."
-        lead="Psychologue du travail et enquêtrice harcèlement et comportements inappropriés, j'interviens auprès des directions, des services RH et des représentants du personnel. Conseils, coaching, organisation, formation."
+        lead="J'interviens auprès de tous les acteurs de votre entreprise pour des enquêtes harcèlement avec neutralité, partialité, professionnalisme. Pour la mise en place de cellule d'écoute et de soutien psychologique. Pour des conseils, du coaching. Et pour de la formation : stress, harcèlement, émotions..."
       />
 
       <section className="mx-auto max-w-6xl px-6 pb-24">
