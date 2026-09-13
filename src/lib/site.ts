@@ -23,7 +23,7 @@ export const SITE = {
 export const FAQ = [
   {
     q: "Les séances sont-elles remboursées ?",
-    a: "Les consultations de psychologue en libéral ne sont pas remboursées par l'Assurance Maladie et la carte Vitale n'est pas acceptée. En revanche, de nombreuses mutuelles prennent en charge tout ou partie des séances : demandez à la vôtre le nombre de séances couvertes par an. Une facture peut vous être remise sur demande.",
+    a: "Je ne suis pas affiliée au parcours psy : les séances ne sont donc pas remboursées par la Sécurité sociale. En revanche, certaines mutuelles prennent en charge tout ou partie des séances : demandez à la vôtre le nombre de séances couvertes par an. Une facture peut vous être remise sur demande.",
   },
   {
     q: "Faut-il une ordonnance ou passer par mon médecin ?",
