@@ -5,7 +5,7 @@ const portrait = { url: "/karen-pinel-portrait.jpg" };
 
 const title = "Qui suis-je — Karen Pinel, psychologue à Saint-Avertin";
 const description =
-  "Parcours, formations et approche de Karen Pinel : psychologue du travail, thérapeute TCC et praticienne EMDR à Saint-Avertin près de Tours.";
+  "Parcours, formations et approche de Karen Pinel : psychologue du travail, thérapeute TCC et praticienne EMDR à Saint-Avertin - Tours.";
 
 export const Route = createFileRoute("/qui-suis-je")({
   head: () => ({
@@ -27,7 +27,7 @@ function About() {
       <PageIntro
         eyebrow="Qui suis-je"
         title="Dix-sept ans en entreprise, puis le cabinet."
-        lead="Je suis psychologue et thérapeute, spécialisée en thérapie cognitive et comportementale (TCC) et en thérapie EMDR, la thérapie des traumatismes."
+        lead="Je suis psychologue et thérapeute, spécialisée en thérapie cognitive et comportementale (TCC) et en thérapie EMDR."
       />
 
       <section className="mx-auto grid max-w-6xl gap-14 px-6 pb-24 md:grid-cols-[0.9fr_1.1fr]">
@@ -49,8 +49,8 @@ function About() {
               Je suis là pour vous accompagner et vous conseiller dans vos situations professionnelles
               et personnelles : transition de carrière, burn-out, confiance en soi, estime de soi,
               affirmation de soi, communication. Ensemble, nous définissons vos objectifs et nous
-              mettons en place des méthodes et des outils adaptés — tests, jeux de rôle, exercices
-              entre les séances — pour les atteindre.
+              mettons en place des méthodes et des outils adaptés afin de les atteindre : tests, jeux
+              de rôle, exercices entre les séances.
             </p>
             <p>
               Si vous traversez une période de questionnement, si vous avez besoin de prendre du recul

@@ -5,8 +5,8 @@ export const SITE = {
   tagline: "Conseils · Coaching · Organisation · Formation",
   phone: "06 99 97 04 08",
   phoneHref: "tel:+33699970408",
-  email: "karenpinel.psychologue@gmail.com",
-  emailHref: "mailto:karenpinel.psychologue@gmail.com",
+  email: "contact@savoirechanger.com",
+  emailHref: "mailto:contact@savoirechanger.com",
   address: "26 rue de la Tuilerie, 37550 Saint-Avertin",
   street: "26 rue de la Tuilerie",
   postalCode: "37550",
@@ -123,7 +123,6 @@ export const FORMATIONS = [
   { year: "2024", label: "Thérapie EMDR (thérapie des traumatismes) — EDEPHE, EMDR France, niveau 1" },
   { year: "2020", label: "Thérapie TCC (cognitivo-comportementale) — AFTCC" },
   { year: "2019", label: "Diplôme et titre de psychologue — Université de Tours" },
-  { year: "2019", label: "Coach certifiée RNCP — Espace Transitions" },
 ] as const;
 
 export const TARIFS = [
