@@ -9,7 +9,7 @@ const description =
 const SEANCES = [
   {
     title: "Première séance",
-    duration: "1h00 environ",
+    duration: "1h00",
     text: "On fait le tour de ce qui vous amène, de votre histoire et de vos attentes. À la fin, nous décidons ensemble de la suite : TCC, EMDR, ou les deux.",
   },
   {
@@ -19,7 +19,7 @@ const SEANCES = [
   },
   {
     title: "Thérapie de couple",
-    duration: "1h00 environ",
+    duration: "1h00",
     text: "Un cadre pour rétablir le dialogue, sortir des schémas répétitifs et décider ensemble de la suite.",
   },
 ];
