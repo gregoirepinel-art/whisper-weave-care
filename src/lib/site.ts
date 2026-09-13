@@ -126,7 +126,7 @@ export const FORMATIONS = [
 ] as const;
 
 export const TARIFS = [
-  { label: "Première séance (TCC ou EMDR)", detail: "1h00 environ", price: "90 €" },
+  { label: "Première séance (TCC ou EMDR)", detail: "1h00", price: "90 €" },
   { label: "Séance de suivi TCC ou EMDR", detail: "45 minutes", price: "60 €" },
-  { label: "Thérapie de couple", detail: "1h00 environ", price: "90 €" },
+  { label: "Thérapie de couple", detail: "1h00", price: "90 €" },
 ] as const;
