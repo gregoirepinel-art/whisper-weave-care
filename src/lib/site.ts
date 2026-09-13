@@ -105,8 +105,8 @@ export const ENTREPRISE_SERVICES = [
     text: "Sensibilisation des managers et des équipes : prévention du burn-out, gestion du stress, communication, repérage des situations sensibles.",
   },
   {
-    title: "Coaching de dirigeants et de managers",
-    text: "Accompagnement individuel sur la posture, la prise de décision, la gestion des tensions et les prises de fonction.",
+    title: "Mise en place de cellule d'écoute et de soutien psychologique",
+    text: "Conception et animation d'une cellule d'écoute et de soutien psychologique pour les salariés, en lien avec la direction, les RH et les représentants du personnel.",
   },
   {
     title: "Conseil en organisation",
