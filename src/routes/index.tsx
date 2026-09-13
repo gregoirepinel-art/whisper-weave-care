@@ -1,7 +1,7 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { EXPERTISES, SITE } from "@/lib/site";
-import portrait from "@/assets/portrait.jpg.asset.json";
-import signature from "@/assets/signature.jpg.asset.json";
+const portrait = { url: "/karen-pinel-portrait.jpg" };
+const signature = { url: "/karen-pinel-signature.jpg" };
 
 const title = "Karen Pinel — Psychologue du travail, TCC & EMDR à Saint-Avertin";
 const description =
