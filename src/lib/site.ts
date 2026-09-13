@@ -46,6 +46,10 @@ export const FAQ = [
     a: "Prévenez au moins 48 heures à l'avance, par téléphone ou directement en ligne, afin que le créneau puisse être proposé à quelqu'un d'autre.",
   },
   {
+    q: "Vous intervenez en cas de harcèlement au travail ?",
+    a: "Oui. Je suis formée et habilitée à conduire des enquêtes harcèlement et comportements inappropriés en entreprise, avec neutralité, impartialité et confidentialité. J'accompagne aussi les directions, les RH et les représentants du personnel dans la prévention des risques psychosociaux et la mise en place de cellule d'écoute.",
+  },
+  {
     q: "Recevez-vous les enfants et les adolescents ?",
     a: "Je ne reçois pas les enfants de moins de 16 ans. Pour les plus jeunes, je peux vous orienter vers un collègue spécialisé.",
   },

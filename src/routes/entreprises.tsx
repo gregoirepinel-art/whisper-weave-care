@@ -3,9 +3,9 @@ import { PageIntro } from "@/components/site/PageIntro";
 import { ContactForm } from "@/components/site/ContactForm";
 import { ENTREPRISE_SERVICES, SITE } from "@/lib/site";
 
-const title = "Prestations en entreprise — psychologue du travail à Saint-Avertin";
+const title = "Enquêtes harcèlement et risques psychosociaux — Karen Pinel, psychologue du travail";
 const description =
-  "Enquêtes harcèlement, prévention des risques psychosociaux, formation, mise en place de cellule d'écoute et de soutien psychologique, et conseil en organisation, en Indre-et-Loire et alentours.";
+  "Psychologue du travail à Saint-Avertin, près de Tours. Enquêtes harcèlement et comportements inappropriés, prévention des risques psychosociaux, formation, cellule d'écoute et soutien psychologique en entreprise.";
 
 export const Route = createFileRoute("/entreprises")({
   head: () => ({
