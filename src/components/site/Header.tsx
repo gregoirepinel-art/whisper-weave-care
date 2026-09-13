@@ -22,7 +22,7 @@ export function Header() {
         <Link to="/" className="flex flex-col leading-none" onClick={() => setOpen(false)}>
           <span className="font-display text-xl tracking-tight text-foreground">{SITE.name}</span>
           <span className="mt-1 text-[0.65rem] uppercase tracking-[0.22em] text-muted-foreground">
-            Psychologue · Saint-Avertin - Tours
+            Psychologue · Tours Saint-Avertin
           </span>
         </Link>
 
