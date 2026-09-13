@@ -1,7 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { PageIntro } from "@/components/site/PageIntro";
 import { FORMATIONS, SITE } from "@/lib/site";
-import portrait from "@/assets/portrait.jpg.asset.json";
+const portrait = { url: "/karen-pinel-portrait.jpg" };
 
 const title = "Qui suis-je — Karen Pinel, psychologue à Saint-Avertin";
 const description =

@@ -15,9 +15,8 @@ export const SITE = {
   rpps: "10009165290",
   adeli: "379310956",
   hours: "Du lundi au vendredi · 9h00 – 12h00 / 14h00 – 19h00",
-  siteUrl: "https://whisper-weave-care.lovable.app",
-  ogImage:
-    "https://whisper-weave-care.lovable.app/__l5e/assets-v1/9def8940-0345-4c46-94a0-70b7605e0785/karen-pinel-signature.jpg",
+  siteUrl: "https://karen-pinel-psychologue.fr",
+  ogImage: "https://karen-pinel-psychologue.fr/karen-pinel-signature.jpg",
   siret: "",
 } as const;
 
