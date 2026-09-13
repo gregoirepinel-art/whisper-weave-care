@@ -27,7 +27,7 @@ function Entreprises() {
       <PageIntro
         eyebrow="Entreprises et organisations"
         title="La psychologie du travail, sur le terrain."
-        lead="J'interviens auprès de tous les acteurs de votre entreprise pour des enquêtes harcèlement avec neutralité, partialité, professionnalisme. Pour la mise en place de cellule d'écoute et de soutien psychologique. Pour des conseils, du coaching. Et pour de la formation : stress, harcèlement, émotions..."
+        lead="J'interviens auprès de tous les acteurs de votre entreprise pour des enquêtes harcèlement avec neutralité, impartialité et professionnalisme. Pour la mise en place de cellule d'écoute et de soutien psychologique. Pour des conseils. Et pour de la formation : stress, harcèlement, émotions..."
       />
 
       <section className="mx-auto max-w-6xl px-6 pb-24">
