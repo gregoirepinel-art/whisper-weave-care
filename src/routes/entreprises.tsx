@@ -3,9 +3,9 @@ import { PageIntro } from "@/components/site/PageIntro";
 import { ContactForm } from "@/components/site/ContactForm";
 import { ENTREPRISE_SERVICES, SITE } from "@/lib/site";
 
-const title = "Prestations en entreprise — psychologue du travail à Tours";
+const title = "Prestations en entreprise — psychologue du travail à Saint-Avertin";
 const description =
-  "Enquêtes harcèlement, prévention des risques psychosociaux, formation, coaching de managers et conseil en organisation, en Indre-et-Loire et alentours.";
+  "Enquêtes harcèlement, prévention des risques psychosociaux, formation, mise en place de cellule d'écoute et de soutien psychologique, et conseil en organisation, en Indre-et-Loire et alentours.";
 
 export const Route = createFileRoute("/entreprises")({
   head: () => ({
