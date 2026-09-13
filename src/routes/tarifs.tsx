@@ -26,7 +26,7 @@ function Tarifs() {
       <PageIntro
         eyebrow="Tarifs"
         title="Des tarifs clairs, annoncés avant la première séance."
-        lead="Les consultations de psychologue ne sont pas remboursées par la Sécurité sociale. Certaines mutuelles prennent en charge tout ou partie des séances : renseignez-vous auprès de la vôtre."
+        lead="Le remboursement dépend de l'affiliation du psychologue au parcours psy. Je ne suis pas affiliée à ce dispositif : les séances ne sont donc pas remboursées par la Sécurité sociale chez moi. Certaines mutuelles prennent en charge tout ou partie des séances : renseignez-vous auprès de la vôtre."
       />
 
       <section className="mx-auto max-w-6xl px-6 pb-20">
