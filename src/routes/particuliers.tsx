@@ -43,7 +43,7 @@ function Particuliers() {
     <>
       <PageIntro
         eyebrow="Particuliers"
-        title="Un espace pour déposer, comprendre et agir."
+        title="Un espace d'écoute, de compréhension et d'action."
         lead="Consulter un psychologue ne signifie pas que vous êtes faible, mais que vous êtes suffisamment fort pour prendre en charge vos propres souffrances, interrogations et émotions, sans les faire supporter à vos proches."
       >
         <a href={SITE.doctolib} target="_blank" rel="noreferrer" className="btn-accent">
