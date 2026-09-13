@@ -49,8 +49,8 @@ function About() {
               Je suis là pour vous accompagner et vous conseiller dans vos situations professionnelles
               et personnelles : transition de carrière, burn-out, confiance en soi, estime de soi,
               affirmation de soi, communication. Ensemble, nous définissons vos objectifs et nous
-              mettons en place des méthodes et des outils adaptés — tests, jeux de rôle, exercices
-              entre les séances — pour les atteindre.
+              mettons en place des méthodes et des outils adaptés afin de les atteindre : tests, jeux
+              de rôle, exercices entre les séances.
             </p>
             <p>
               Si vous traversez une période de questionnement, si vous avez besoin de prendre du recul
