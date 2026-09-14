@@ -1,5 +1,6 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { PageIntro } from "@/components/site/PageIntro";
+import { ServiceDoors } from "@/components/site/ServiceDoors";
 import { EXPERTISES, SITE } from "@/lib/site";
 
 const title = "Consultations pour particuliers — TCC & EMDR à Saint-Avertin";
@@ -31,7 +32,9 @@ export const Route = createFileRoute("/particuliers")({
       { name: "description", content: description },
       { property: "og:title", content: title },
       { property: "og:description", content: description },
+      { property: "og:type", content: "website" },
       { property: "og:image", content: SITE.ogImage },
+      { name: "twitter:card", content: "summary_large_image" },
       { name: "twitter:image", content: SITE.ogImage },
     ],
   }),
@@ -94,13 +97,8 @@ function Particuliers() {
 
       <section className="mx-auto max-w-6xl px-6 pb-24">
         <p className="eyebrow">Expertises et actes</p>
-        <div className="mt-10 grid gap-px bg-border sm:grid-cols-2 lg:grid-cols-4">
-          {EXPERTISES.map((item) => (
-            <article key={item.title} className="bg-secondary/60 p-7">
-              <h3 className="text-lg leading-snug">{item.title}</h3>
-              <p className="mt-3 text-sm leading-relaxed text-muted-foreground">{item.text}</p>
-            </article>
-          ))}
+        <div className="mt-10">
+          <ServiceDoors services={EXPERTISES} />
         </div>
       </section>
 
