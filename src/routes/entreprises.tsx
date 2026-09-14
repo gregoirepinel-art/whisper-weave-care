@@ -14,7 +14,9 @@ export const Route = createFileRoute("/entreprises")({
       { name: "description", content: description },
       { property: "og:title", content: title },
       { property: "og:description", content: description },
+      { property: "og:type", content: "website" },
       { property: "og:image", content: SITE.ogImage },
+      { name: "twitter:card", content: "summary_large_image" },
       { name: "twitter:image", content: SITE.ogImage },
     ],
   }),
@@ -31,15 +33,26 @@ function Entreprises() {
       />
 
       <section className="mx-auto max-w-6xl px-6 pb-24">
-        <div className="grid gap-px bg-border md:grid-cols-2">
+        <div className="rule-top grid md:grid-cols-2">
           {ENTREPRISE_SERVICES.map((s, i) => (
             <article
               key={s.title}
-              className="border-t-4 border-accent bg-secondary/60 p-8 md:p-10"
+              className="group grid grid-cols-[4.5rem_1fr] gap-6 border-b border-border py-10 md:grid-cols-[5.5rem_1fr] md:gap-8 md:px-8 md:py-12 md:odd:border-r"
             >
-              <p className="eyebrow">{String(i + 1).padStart(2, "0")}</p>
-              <h2 className="mt-4 text-2xl leading-snug">{s.title}</h2>
-              <p className="mt-4 leading-relaxed text-muted-foreground">{s.text}</p>
+              <div className="relative h-24 w-[3.75rem] self-start border-2 border-primary p-1 md:h-28 md:w-[4.5rem]" aria-hidden="true">
+                <div className="relative flex h-full w-full origin-left items-start justify-center bg-primary pt-4 text-primary-foreground transition-transform duration-500 motion-reduce:transition-none md:pt-5 md:group-hover:[transform:perspective(500px)_rotateY(-8deg)]">
+                  <span className="font-display text-xl">{String(i + 1).padStart(2, "0")}</span>
+                  <span className="absolute right-1.5 top-1/2 h-1.5 w-1.5 rounded-full bg-accent" />
+                </div>
+                <span className="absolute -bottom-1.5 -left-2 h-px w-[calc(100%+1rem)] bg-primary" />
+              </div>
+
+              <div className="self-center">
+                <h2 className="text-2xl leading-snug transition-colors duration-300 group-hover:text-primary">
+                  {s.title}
+                </h2>
+                <p className="mt-4 leading-relaxed text-muted-foreground">{s.text}</p>
+              </div>
             </article>
           ))}
         </div>
