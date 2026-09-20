@@ -11,6 +11,21 @@ export default defineConfig({
     // Redirect TanStack Start's bundled server entry to src/server.ts (our SSR error wrapper).
     // nitro/vite builds from this
     server: { entry: "server" },
+    // Pre-render every page to static HTML (dist/client) so static hosts
+    // (Render Static Site, Netlify, GitHub Pages) can serve the site directly.
+    prerender: { enabled: true, crawlLinks: true },
+    pages: [
+      { path: "/" },
+      { path: "/qui-suis-je" },
+      { path: "/particuliers" },
+      { path: "/entreprises" },
+      { path: "/tarifs" },
+      { path: "/faq" },
+      { path: "/contact" },
+      { path: "/mentions-legales" },
+      { path: "/politique-confidentialite" },
+      { path: "/cgu" },
+    ],
   },
   vite: {
     // GitHub Pages project sites are served from a sub-path (/whisper-weave-care/).
