@@ -99,7 +99,9 @@ function Home() {
 
       <section className="mx-auto max-w-6xl px-6 pb-24">
         <div className="rule-top grid gap-8 pt-10 md:grid-cols-[0.4fr_1.6fr] md:gap-12 md:pt-12">
-          <h2 className="font-display text-3xl leading-tight">Ce que je fais</h2>
+          <h2 className="font-sans text-2xl font-medium leading-tight text-foreground md:text-3xl">
+            Ce que je fais
+          </h2>
           <div className="max-w-2xl space-y-4 font-sans text-base font-normal leading-7 text-muted-foreground [text-wrap:wrap]">
             <p>J'interviens sur deux terrains complémentaires.</p>
             <p>
