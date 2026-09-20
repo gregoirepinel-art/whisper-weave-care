@@ -37,7 +37,7 @@ function Entreprises() {
       <section className="mx-auto max-w-6xl px-6 pb-24">
         <div className="rule-top grid gap-12 pt-12 md:grid-cols-[0.85fr_1.15fr]">
           <h2 className="text-3xl leading-tight md:text-4xl">Pourquoi me contacter&nbsp;?</h2>
-          <div className="space-y-6 text-lg leading-relaxed text-muted-foreground">
+          <div className="space-y-6 bg-primary p-7 text-lg leading-relaxed text-primary-foreground md:p-10">
             <p>
               L'article L. 4121-1 du Code du travail oblige l'employeur à protéger la santé physique
               et mentale de ses salariés, et donc à prévenir les risques psychosociaux. Enquêtes,
@@ -56,7 +56,7 @@ function Entreprises() {
       <section className="mx-auto max-w-6xl px-6 pb-24">
         <div className="rule-top grid gap-12 pt-12 md:grid-cols-[0.85fr_1.15fr]">
           <h2 className="text-3xl leading-tight md:text-4xl">Ma façon de travailler</h2>
-          <div className="space-y-6 text-lg leading-relaxed text-muted-foreground">
+          <div className="space-y-6 bg-primary p-7 text-lg leading-relaxed text-primary-foreground md:p-10">
             <p>
               J'ai été salariée pendant dix-huit ans avant de devenir psychologue du travail. Je
               connais les contraintes réelles des organisations, les jeux d'acteurs, et ce que

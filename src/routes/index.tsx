@@ -51,10 +51,19 @@ export const Route = createFileRoute("/")({
 function Home() {
   return (
     <>
-      <div aria-hidden="true" className="h-5 w-full bg-primary" />
-      <section className="mx-auto grid max-w-6xl gap-14 px-6 pb-20 pt-8 md:grid-cols-[1.1fr_0.9fr] md:items-start md:pt-10">
+      <div className="w-full bg-primary">
+        <div className="mx-auto flex h-10 max-w-6xl items-center px-6">
+          <span className="text-[0.55rem] font-medium uppercase tracking-[0.4em] text-primary-foreground sm:text-[0.65rem]">
+            Psychologue du travail · TCC &amp; EMDR
+          </span>
+        </div>
+      </div>
+      <section className="mx-auto grid max-w-6xl gap-14 px-6 pb-20 pt-10 md:grid-cols-[1.1fr_0.9fr] md:items-start md:pt-14">
         <div>
-          <p className="eyebrow rise text-primary">Cabinet de Saint-Avertin · Tours</p>
+          <p className="rise inline-flex items-center gap-3">
+            <span aria-hidden="true" className="h-px w-10 bg-sand" />
+            <span className="eyebrow text-primary">Cabinet de Saint-Avertin · Tours</span>
+          </p>
           <h1 className="rise mt-6 text-[2.6rem] leading-[1.05] md:text-[4.2rem]">
             Prendre soin de ce&nbsp;que&nbsp;le travail et la vie{" "}
             <span className="italic text-muted-foreground">laissent en suspens.</span>
@@ -69,7 +78,7 @@ function Home() {
             </a>
           </div>
 
-          <div className="rise mt-10 max-w-xl text-lg leading-relaxed text-muted-foreground">
+          <div className="rise mt-10 max-w-xl bg-primary p-7 text-lg leading-relaxed text-primary-foreground md:p-9">
             <p>
               Psychologue du travail, thérapeute en TCC et en EMDR. J'ai été salariée pendant
               dix-huit ans&nbsp;: je connais les entreprises parce que j'y ai travaillé, et les
@@ -79,10 +88,16 @@ function Home() {
             </p>
           </div>
 
+
         </div>
 
         <figure className="rise">
-          <img
+          <div className="relative">
+            <span
+              aria-hidden="true"
+              className="absolute -bottom-5 -left-5 -z-10 hidden h-28 w-28 bg-sand md:block"
+            />
+            <img
             src={portrait.url}
             alt="Portrait de Karen Pinel, psychologue à Saint-Avertin"
             className="aspect-[3/4] w-full object-cover"
@@ -90,19 +105,21 @@ function Home() {
             width="608"
             height="909"
             fetchPriority="high"
-          />
+            />
+          </div>
           <figcaption className="mt-4 text-sm text-muted-foreground">
             Karen Pinel — {SITE.role}
           </figcaption>
         </figure>
       </section>
 
+
       <section className="mx-auto max-w-6xl px-6 pb-24">
         <div className="rule-top grid gap-8 pt-10 md:grid-cols-[0.4fr_1.6fr] md:gap-12 md:pt-12">
           <h2 className="font-sans text-2xl font-medium leading-tight text-foreground md:text-3xl">
             Ce que je fais
           </h2>
-          <div className="max-w-2xl space-y-4 font-sans text-base font-normal leading-7 text-muted-foreground [text-wrap:wrap]">
+          <div className="max-w-2xl space-y-4 bg-primary p-7 font-sans text-base font-normal leading-7 text-primary-foreground [text-wrap:wrap] md:p-10">
             <p>J'interviens sur deux terrains complémentaires.</p>
             <p>
               Auprès des organisations, pour prévenir et traiter les situations qui abîment le
@@ -118,15 +135,24 @@ function Home() {
         </div>
       </section>
 
-      <section className="border-y border-border">
-        <div className="mx-auto grid max-w-6xl gap-px bg-border md:grid-cols-2">
+      <section className="bg-primary">
+        <div className="mx-auto grid max-w-6xl gap-px bg-primary-foreground/20 md:grid-cols-2">
           <Link
             to="/entreprises"
-            className="group bg-background px-6 py-16 transition-colors hover:bg-secondary/70 md:px-12 md:py-20"
+            className="group relative overflow-hidden bg-primary px-6 py-16 text-primary-foreground transition-colors hover:bg-primary/90 md:px-12 md:py-20"
           >
-            <p className="text-[0.7rem] uppercase tracking-[0.24em] text-primary">01 — Vous, en entreprise</p>
-            <h2 className="mt-5 text-3xl md:text-4xl">Intervenir dans l'organisation</h2>
-            <p className="mt-5 max-w-md leading-relaxed text-muted-foreground">
+            <span
+              aria-hidden="true"
+              className="pointer-events-none absolute right-5 top-6 font-display text-[5rem] leading-none text-sand/20"
+            >
+              01
+            </span>
+            <p className="inline-flex items-center gap-2 text-[0.7rem] uppercase tracking-[0.24em] text-sand">
+              <span aria-hidden="true" className="h-0.5 w-4 bg-sand" />
+              Vous, en entreprise
+            </p>
+            <h2 className="mt-5 text-3xl text-primary-foreground md:text-4xl">Intervenir dans l'organisation</h2>
+            <p className="mt-5 max-w-md leading-relaxed text-primary-foreground/80">
               Enquêtes harcèlement, prévention des risques psychosociaux, formation, soutien des
               équipes.
             </p>
@@ -135,11 +161,20 @@ function Home() {
 
           <Link
             to="/particuliers"
-            className="group bg-background px-6 py-16 transition-colors hover:bg-secondary/70 md:px-12 md:py-20"
+            className="group relative overflow-hidden bg-primary px-6 py-16 text-primary-foreground transition-colors hover:bg-primary/90 md:px-12 md:py-20"
           >
-            <p className="text-[0.7rem] uppercase tracking-[0.24em] text-primary">02 — Vous, à titre personnel</p>
-            <h2 className="mt-5 text-3xl md:text-4xl">Consulter en TCC ou en EMDR</h2>
-            <p className="mt-5 max-w-md leading-relaxed text-muted-foreground">
+            <span
+              aria-hidden="true"
+              className="pointer-events-none absolute right-5 top-6 font-display text-[5rem] leading-none text-sand/20"
+            >
+              02
+            </span>
+            <p className="inline-flex items-center gap-2 text-[0.7rem] uppercase tracking-[0.24em] text-sand">
+              <span aria-hidden="true" className="h-0.5 w-4 bg-sand" />
+              Vous, à titre personnel
+            </p>
+            <h2 className="mt-5 text-3xl text-primary-foreground md:text-4xl">Consulter en TCC ou en EMDR</h2>
+            <p className="mt-5 max-w-md leading-relaxed text-primary-foreground/80">
               Un espace d'écoute, d'échange, d'interrogation et de compréhension. Séances individuelles et thérapie de couple.
             </p>
             <span className="link-underline mt-8 inline-block text-sm">Découvrir le suivi</span>
@@ -167,13 +202,13 @@ function Home() {
       <section className="mx-auto max-w-6xl px-6 pb-24">
         <div className="rule-top grid gap-12 pt-12 md:grid-cols-[0.4fr_1.6fr]">
           <h2 className="text-2xl md:text-3xl">Travaux</h2>
-          <div>
-            <p className="text-sm text-muted-foreground">Mémoire de recherche</p>
-            <p className="mt-2 max-w-2xl text-lg leading-relaxed">
+          <div className="max-w-2xl bg-primary p-7 text-primary-foreground md:p-10">
+            <p className="text-sm uppercase tracking-[0.2em] text-sand">Mémoire de recherche</p>
+            <p className="mt-3 text-lg leading-relaxed">
               Leadership authentique, engagement au travail et épanouissement des employés du
               secteur bancaire.
             </p>
-            <p className="mt-10 text-sm text-muted-foreground">
+            <p className="mt-8 text-sm text-primary-foreground/70">
               Exercice en cabinet à {SITE.city} depuis 2020 · N° RPPS {SITE.rpps} · N° ADELI{" "}
               {SITE.adeli}
             </p>
@@ -183,16 +218,16 @@ function Home() {
 
       <section className="mx-auto max-w-6xl px-6 pb-24">
         <p className="eyebrow">Domaines d'accompagnement</p>
-        <div className="mt-10 grid gap-px bg-border sm:grid-cols-2 lg:grid-cols-4">
+        <div className="mt-10 grid gap-px bg-primary-foreground/20 sm:grid-cols-2 lg:grid-cols-4">
           {EXPERTISES.map((item) => (
             <Link
               key={item.title}
               to={item.href}
-              className="group bg-background p-7 transition-colors hover:bg-secondary/70"
+              className="group bg-primary p-7 text-primary-foreground transition-colors hover:bg-primary/90"
             >
-              <h3 className="text-lg leading-snug">{item.title}</h3>
-              <p className="mt-3 text-sm leading-relaxed text-muted-foreground">{item.text}</p>
-              <span className="link-underline mt-5 inline-block text-sm">En savoir plus <span aria-hidden="true">→</span></span>
+              <h3 className="text-lg leading-snug text-primary-foreground">{item.title}</h3>
+              <p className="mt-3 text-sm leading-relaxed text-primary-foreground/80">{item.text}</p>
+              <span className="link-underline mt-5 inline-block text-sm text-sand">En savoir plus <span aria-hidden="true">→</span></span>
             </Link>
           ))}
         </div>
