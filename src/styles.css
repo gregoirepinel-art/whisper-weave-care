@@ -91,6 +91,8 @@
     color: var(--color-foreground);
     font-family: var(--font-sans);
     -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-synthesis: none;
   }
 
   h1,
@@ -99,6 +101,11 @@
     font-family: var(--font-display);
     font-weight: 400;
     letter-spacing: 0;
+  }
+
+  .font-display {
+    font-synthesis: none;
+    font-optical-sizing: auto;
   }
 
   :focus-visible {
