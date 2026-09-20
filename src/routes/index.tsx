@@ -53,7 +53,7 @@ function Home() {
     <>
       <section className="mx-auto grid max-w-6xl gap-14 px-6 pb-20 pt-16 md:grid-cols-[1.1fr_0.9fr] md:items-start md:pt-24">
         <div>
-          <span aria-hidden="true" className="rise mb-5 block h-[3px] w-14 bg-primary" />
+          <span aria-hidden="true" className="mb-5 block h-1 w-16 bg-primary" />
           <p className="eyebrow rise text-primary">Cabinet de Saint-Avertin · Tours</p>
           <h1 className="rise mt-6 text-[2.6rem] leading-[1.05] md:text-[4.2rem]">
             Prendre soin de ce&nbsp;que&nbsp;le travail et la vie{" "}
@@ -98,9 +98,9 @@ function Home() {
       </section>
 
       <section className="mx-auto max-w-6xl px-6 pb-24">
-        <div className="rule-top grid gap-12 pt-12 md:grid-cols-[0.4fr_1.6fr]">
-          <h2 className="text-2xl md:text-3xl">Ce que je fais</h2>
-          <div className="max-w-2xl space-y-4 leading-relaxed text-muted-foreground">
+        <div className="rule-top grid gap-8 pt-10 md:grid-cols-[0.4fr_1.6fr] md:gap-12 md:pt-12">
+          <h2 className="font-display text-3xl leading-tight">Ce que je fais</h2>
+          <div className="max-w-2xl space-y-4 font-sans text-base font-normal leading-7 text-muted-foreground [text-wrap:wrap]">
             <p>J'interviens sur deux terrains complémentaires.</p>
             <p>
               Auprès des organisations, pour prévenir et traiter les situations qui abîment le

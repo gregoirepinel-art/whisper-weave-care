@@ -1,8 +1,8 @@
 # Roadmap
 
 - [x] Accueil : « Qui suis-je » retiré, contenu intégré au texte d'intro du haut
-- [x] Accueil : touche de bleu en haut (surtitre « Cabinet de Saint-Avertin · Tours » en bleu)
-- [x] Typo : texte justifié avec césure, espacement resserré dans « Ce que je fais »
+- [x] Accueil : bande bleue visible au-dessus de « Cabinet de Saint-Avertin · Tours »
+- [x] Typo : texte aligné à gauche, sans césure, et police stabilisée dans « Ce que je fais »
 - [x] Vérifié mobile (602px) + desktop, build OK
 
 ## Reste ouvert (bloqué)
