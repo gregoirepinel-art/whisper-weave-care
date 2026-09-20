@@ -78,7 +78,7 @@ function Home() {
             </a>
           </div>
 
-          <div className="rise mt-10 max-w-xl text-lg leading-relaxed text-muted-foreground">
+          <div className="rise mt-10 max-w-xl bg-primary p-7 text-lg leading-relaxed text-primary-foreground md:p-9">
             <p>
               Psychologue du travail, thérapeute en TCC et en EMDR. J'ai été salariée pendant
               dix-huit ans&nbsp;: je connais les entreprises parce que j'y ai travaillé, et les
@@ -87,6 +87,7 @@ function Home() {
               collectif quand une situation dérape.
             </p>
           </div>
+
 
         </div>
 
@@ -116,7 +117,7 @@ function Home() {
           <h2 className="font-sans text-2xl font-medium leading-tight text-foreground md:text-3xl">
             Ce que je fais
           </h2>
-          <div className="max-w-2xl space-y-4 font-sans text-base font-normal leading-7 text-muted-foreground [text-wrap:wrap]">
+          <div className="max-w-2xl space-y-4 bg-primary p-7 font-sans text-base font-normal leading-7 text-primary-foreground [text-wrap:wrap] md:p-10">
             <p>J'interviens sur deux terrains complémentaires.</p>
             <p>
               Auprès des organisations, pour prévenir et traiter les situations qui abîment le
@@ -132,15 +133,24 @@ function Home() {
         </div>
       </section>
 
-      <section className="border-y border-border">
-        <div className="mx-auto grid max-w-6xl gap-px bg-border md:grid-cols-2">
+      <section className="bg-primary">
+        <div className="mx-auto grid max-w-6xl gap-px bg-primary-foreground/20 md:grid-cols-2">
           <Link
             to="/entreprises"
-            className="group bg-background px-6 py-16 transition-colors hover:bg-secondary/70 md:px-12 md:py-20"
+            className="group relative overflow-hidden bg-primary px-6 py-16 text-primary-foreground transition-colors hover:bg-primary/90 md:px-12 md:py-20"
           >
-            <p className="text-[0.7rem] uppercase tracking-[0.24em] text-primary">01 — Vous, en entreprise</p>
-            <h2 className="mt-5 text-3xl md:text-4xl">Intervenir dans l'organisation</h2>
-            <p className="mt-5 max-w-md leading-relaxed text-muted-foreground">
+            <span
+              aria-hidden="true"
+              className="pointer-events-none absolute -top-6 right-4 font-display text-[5.5rem] leading-none text-sand/20"
+            >
+              01
+            </span>
+            <p className="inline-flex items-center gap-2 text-[0.7rem] uppercase tracking-[0.24em] text-sand">
+              <span aria-hidden="true" className="h-0.5 w-4 bg-sand" />
+              Vous, en entreprise
+            </p>
+            <h2 className="mt-5 text-3xl text-primary-foreground md:text-4xl">Intervenir dans l'organisation</h2>
+            <p className="mt-5 max-w-md leading-relaxed text-primary-foreground/80">
               Enquêtes harcèlement, prévention des risques psychosociaux, formation, soutien des
               équipes.
             </p>
@@ -149,11 +159,20 @@ function Home() {
 
           <Link
             to="/particuliers"
-            className="group bg-background px-6 py-16 transition-colors hover:bg-secondary/70 md:px-12 md:py-20"
+            className="group relative overflow-hidden bg-primary px-6 py-16 text-primary-foreground transition-colors hover:bg-primary/90 md:px-12 md:py-20"
           >
-            <p className="text-[0.7rem] uppercase tracking-[0.24em] text-primary">02 — Vous, à titre personnel</p>
-            <h2 className="mt-5 text-3xl md:text-4xl">Consulter en TCC ou en EMDR</h2>
-            <p className="mt-5 max-w-md leading-relaxed text-muted-foreground">
+            <span
+              aria-hidden="true"
+              className="pointer-events-none absolute -top-6 right-4 font-display text-[5.5rem] leading-none text-sand/20"
+            >
+              02
+            </span>
+            <p className="inline-flex items-center gap-2 text-[0.7rem] uppercase tracking-[0.24em] text-sand">
+              <span aria-hidden="true" className="h-0.5 w-4 bg-sand" />
+              Vous, à titre personnel
+            </p>
+            <h2 className="mt-5 text-3xl text-primary-foreground md:text-4xl">Consulter en TCC ou en EMDR</h2>
+            <p className="mt-5 max-w-md leading-relaxed text-primary-foreground/80">
               Un espace d'écoute, d'échange, d'interrogation et de compréhension. Séances individuelles et thérapie de couple.
             </p>
             <span className="link-underline mt-8 inline-block text-sm">Découvrir le suivi</span>
