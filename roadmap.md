@@ -9,11 +9,11 @@
 - [x] Barre fixe « Appeler / Prendre rendez-vous » sur téléphone.
 - [x] Mettre à jour les mentions légales : SIRET, coordonnées complètes et hébergeur Netlify.
 - [x] Ajouter une politique de confidentialité RGPD complète et son accès en bas de page.
-- [x] Vérifier l’absence de traceur nécessitant une bannière de consentement.
+- [x] Ajouter une bannière de consentement avant Google Analytics et la carte Google.
 - [x] Forcer la redirection vers HTTPS et vérifier l’adresse publique sécurisée.
 - [x] Mentionner explicitement le Code de déontologie des psychologues français.
 - [ ] Notification e-mail à chaque message du formulaire (nécessite la mise en place de l'envoi d'e-mails).
-- [ ] Vérifier le lien Doctolib (fiche « Joué-lès-Tours » alors que le cabinet est à Saint-Avertin).
+- [ ] Faire confirmer par Karen le lien Doctolib (la fiche répond, mais son adresse contient « Joué-lès-Tours » alors que le cabinet est à Saint-Avertin).
 - [ ] Recevoir les informations d'assurance RC professionnelle.
 - [x] Ajouter les conditions générales d'utilisation.
 - [x] Ajouter le sitemap et sa déclaration dans robots.txt.
