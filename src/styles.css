@@ -211,14 +211,9 @@
 
 @layer base {
   p {
-    text-align: justify;
-    hyphens: auto;
-    text-wrap: pretty;
-  }
-
-  p.eyebrow {
     text-align: left;
     hyphens: none;
+    text-wrap: pretty;
   }
 }
 
