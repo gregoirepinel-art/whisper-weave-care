@@ -30,9 +30,24 @@ function Entreprises() {
     <>
       <PageIntro
         eyebrow="Entreprises et organisations"
-        title="La psychologie du travail, sur le terrain."
+        title="La psychologie dans les organisations de travail."
         lead="J'interviens auprès de tous les acteurs de votre entreprise pour des enquêtes harcèlement avec neutralité, impartialité et professionnalisme. Pour la mise en place de cellule d'écoute et de soutien psychologique. Pour des conseils. Et pour de la formation : stress, harcèlement, émotions..."
       />
+
+      <section className="mx-auto max-w-6xl px-6 pb-24">
+        <div className="rule-top grid gap-12 pt-12 md:grid-cols-[0.85fr_1.15fr]">
+          <h2 className="text-3xl leading-tight md:text-4xl">Pourquoi me contacter&nbsp;?</h2>
+          <div className="space-y-6 text-lg leading-relaxed text-muted-foreground">
+            <p>
+              L'article L. 4121-1 du Code du travail oblige l'employeur à protéger la santé physique
+              et mentale de ses salariés, et donc à prévenir les risques psychosociaux. Enquêtes,
+              prévention des RPS, formation, soutien des équipes&nbsp;: je vous accompagne avec
+              méthode, indépendance et neutralité pour répondre à cette obligation sur des bases
+              solides.
+            </p>
+          </div>
+        </div>
+      </section>
 
       <section className="mx-auto max-w-6xl px-6 pb-24">
         <ServiceDoors services={ENTREPRISE_SERVICES} />
@@ -43,7 +58,7 @@ function Entreprises() {
           <h2 className="text-3xl leading-tight md:text-4xl">Ma façon de travailler</h2>
           <div className="space-y-6 text-lg leading-relaxed text-muted-foreground">
             <p>
-              J'ai été salariée pendant dix-sept ans avant de devenir psychologue du travail. Je
+              J'ai été salariée pendant dix-huit ans avant de devenir psychologue du travail. Je
               connais les contraintes réelles des organisations, les jeux d'acteurs, et ce que
               traverse un collectif quand une situation dérape.
             </p>

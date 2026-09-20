@@ -45,7 +45,7 @@ function About() {
         <div className="border-l-2 border-accent pl-7 text-lg leading-relaxed text-muted-foreground md:pl-10">
           <div className="space-y-6">
             <p>
-              J'ai été salariée pendant dix-sept ans avant de devenir psychologue du travail. C'est
+              J'ai été salariée pendant dix-huit ans avant de devenir psychologue du travail. C'est
               de là que vient ma façon de travailler : je connais les contraintes réelles des
               organisations, les jeux d'acteurs, et ce que traverse un collectif quand une situation
               dérape.
