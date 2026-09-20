@@ -132,7 +132,7 @@ function Home() {
             <h2 className="mt-5 text-3xl md:text-4xl">Intervenir dans l'organisation</h2>
             <p className="mt-5 max-w-md leading-relaxed text-muted-foreground">
               Enquêtes harcèlement, prévention des risques psychosociaux, formation, coaching de
-              managers. Dix-sept ans en entreprise avant d'exercer à mon compte.
+              managers. Dix-huit ans en entreprise avant d'exercer à mon compte.
             </p>
             <span className="link-underline mt-8 inline-block text-sm">Voir les prestations</span>
           </Link>
