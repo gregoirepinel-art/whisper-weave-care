@@ -17,27 +17,12 @@ export default defineConfig({
     // Redirect TanStack Start's bundled server entry to src/server.ts (our SSR error wrapper).
     // nitro/vite builds from this
     server: { entry: "server" },
-    // Pre-render every page to static HTML so static hosts can serve the site
-    // directly. Only enabled for static-export builds: it needs the node
-    // preset below (the default cloudflare worker entry can't be crawled).
-    prerender: { enabled: staticExport, crawlLinks: true },
-    pages: staticExport
-      ? [
-          { path: "/" },
-          { path: "/qui-suis-je" },
-          { path: "/particuliers" },
-          { path: "/entreprises" },
-          { path: "/tarifs" },
-          { path: "/faq" },
-          { path: "/contact" },
-          { path: "/mentions-legales" },
-          { path: "/politique-confidentialite" },
-          { path: "/cgu" },
-        ]
-      : [],
   },
-  // Node preset for static exports: produces `.output/public` (static assets
-  // + pre-rendered HTML) and a node server entry the pre-renderer can crawl.
+  // Static-export builds (STATIC_EXPORT=1, see `build:static` in package.json)
+  // use the node preset: it produces `.output/public` (static assets) plus a
+  // runnable node server that scripts/export-static.mjs crawls to write one
+  // HTML file per page into `.output/public`. The normal Lovable build
+  // (cloudflare worker target) is untouched.
   nitro: staticExport ? { preset: "node-server" } : undefined,
   vite: {
     // GitHub Pages project sites are served from a sub-path (/whisper-weave-care/).
