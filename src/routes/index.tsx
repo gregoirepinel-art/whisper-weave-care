@@ -53,6 +53,7 @@ function Home() {
     <>
       <section className="mx-auto grid max-w-6xl gap-14 px-6 pb-20 pt-16 md:grid-cols-[1.1fr_0.9fr] md:items-start md:pt-24">
         <div>
+          <span aria-hidden="true" className="rise mb-5 block h-[3px] w-14 bg-primary" />
           <p className="eyebrow rise text-primary">Cabinet de Saint-Avertin · Tours</p>
           <h1 className="rise mt-6 text-[2.6rem] leading-[1.05] md:text-[4.2rem]">
             Prendre soin de ce&nbsp;que&nbsp;le travail et la vie{" "}
