@@ -1,7 +1,7 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { EXPERTISES, SITE } from "@/lib/site";
-const portrait = { url: "/karen-pinel-portrait.jpg" };
-const signature = { url: "/karen-pinel-signature.jpg" };
+const portrait = { url: "/karen-pinel-portrait.webp" };
+const signature = { url: "/karen-pinel-signature.webp" };
 
 const title = "Karen Pinel — Psychologue du travail, TCC & EMDR à Saint-Avertin";
 const description =
@@ -16,7 +16,10 @@ export const Route = createFileRoute("/")({
       { property: "og:description", content: description },
       { property: "og:image", content: SITE.ogImage },
       { name: "twitter:image", content: SITE.ogImage },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary_large_image" },
     ],
+    links: [{ rel: "canonical", href: SITE.siteUrl }],
     scripts: [
       {
         type: "application/ld+json",
@@ -82,6 +85,9 @@ function Home() {
             alt="Portrait de Karen Pinel, psychologue à Saint-Avertin"
             className="aspect-[3/4] w-full object-cover"
             loading="eager"
+            width="608"
+            height="909"
+            fetchPriority="high"
           />
           <figcaption className="mt-4 text-sm text-muted-foreground">
             Karen Pinel — {SITE.role}
@@ -154,6 +160,8 @@ function Home() {
           alt="La psychologie en action — Karen Pinel, conseils, coaching, organisation, formation"
           className="w-full object-cover"
           loading="lazy"
+          width="1442"
+          height="361"
         />
       </section>
 

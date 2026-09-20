@@ -20,6 +20,7 @@ export const Route = createFileRoute("/entreprises")({
       { name: "twitter:card", content: "summary_large_image" },
       { name: "twitter:image", content: SITE.ogImage },
     ],
+    links: [{ rel: "canonical", href: `${SITE.siteUrl}/entreprises` }],
   }),
   component: Entreprises,
 });

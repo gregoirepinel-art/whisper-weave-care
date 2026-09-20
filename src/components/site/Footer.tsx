@@ -76,6 +76,11 @@ export function Footer() {
                   Politique de confidentialité
                 </Link>
               </li>
+              <li>
+                <Link to="/cgu" className="link-underline">
+                  Conditions d'utilisation
+                </Link>
+              </li>
             </ul>
           </div>
         </div>

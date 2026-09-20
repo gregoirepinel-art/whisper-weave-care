@@ -2,6 +2,7 @@ import { createFileRoute } from "@tanstack/react-router";
 import { PageIntro } from "@/components/site/PageIntro";
 import { ContactForm } from "@/components/site/ContactForm";
 import { SITE } from "@/lib/site";
+import { ConsentMap } from "@/components/site/ConsentMap";
 
 const title = "Contact — cabinet de Karen Pinel à Saint-Avertin";
 const description =
@@ -16,7 +17,10 @@ export const Route = createFileRoute("/contact")({
       { property: "og:description", content: description },
       { property: "og:image", content: SITE.ogImage },
       { name: "twitter:image", content: SITE.ogImage },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary_large_image" },
     ],
+    links: [{ rel: "canonical", href: `${SITE.siteUrl}/contact` }],
   }),
   component: Contact,
 });
@@ -86,11 +90,9 @@ function Contact() {
       </section>
 
       <section className="mx-auto max-w-6xl px-6 pb-20">
-        <iframe
+        <ConsentMap
           title={`Plan d'accès au cabinet, ${SITE.street}, ${SITE.city}`}
           src={`https://www.google.com/maps?q=${mapQuery}&output=embed`}
-          loading="lazy"
-          className="h-[360px] w-full border border-border"
         />
       </section>
 

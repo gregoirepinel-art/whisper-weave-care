@@ -30,6 +30,7 @@ export function ContactForm({
           phone: String(fd.get("phone") ?? ""),
           audience: (String(fd.get("audience") ?? "particulier") as "particulier" | "entreprise"),
           message: String(fd.get("message") ?? ""),
+          website: String(fd.get("website") ?? ""),
         },
       });
       form.reset();
@@ -61,6 +62,12 @@ export function ContactForm({
 
   return (
     <form onSubmit={handleSubmit} className="space-y-8">
+      <div className="absolute left-[-10000px] top-auto h-px w-px overflow-hidden" aria-hidden="true">
+        <label>
+          Ne pas remplir ce champ
+          <input name="website" tabIndex={-1} autoComplete="off" />
+        </label>
+      </div>
       <fieldset className="space-y-3">
         <legend className="eyebrow">Votre demande</legend>
         <div className="flex flex-wrap gap-3 pt-2">
@@ -90,7 +97,7 @@ export function ContactForm({
       <div className="grid gap-8 sm:grid-cols-2">
         <label className="block">
           <span className="eyebrow">Nom</span>
-          <input name="name" required className={inputClass} placeholder="Votre nom" />
+          <input name="name" required minLength={2} maxLength={120} autoComplete="name" className={inputClass} placeholder="Votre nom" />
         </label>
         <label className="block">
           <span className="eyebrow">E-mail</span>
@@ -98,6 +105,8 @@ export function ContactForm({
             name="email"
             type="email"
             required
+            maxLength={200}
+            autoComplete="email"
             className={inputClass}
             placeholder="vous@exemple.fr"
           />
@@ -106,7 +115,7 @@ export function ContactForm({
 
       <label className="block">
         <span className="eyebrow">Téléphone (facultatif)</span>
-        <input name="phone" className={inputClass} placeholder="06 00 00 00 00" />
+        <input name="phone" type="tel" maxLength={40} autoComplete="tel" className={inputClass} placeholder="06 00 00 00 00" />
       </label>
 
       <label className="block">
@@ -114,6 +123,8 @@ export function ContactForm({
         <textarea
           name="message"
           required
+          minLength={10}
+          maxLength={4000}
           rows={5}
           className={`${inputClass} resize-none`}
           placeholder="Dites-moi en quelques lignes ce qui vous amène."
