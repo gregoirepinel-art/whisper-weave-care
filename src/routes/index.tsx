@@ -53,12 +53,12 @@ function Home() {
     <>
       <div className="w-full bg-primary">
         <div className="mx-auto flex h-10 max-w-6xl items-center px-6">
-          <span className="text-[0.55rem] font-medium uppercase tracking-[0.4em] text-primary-foreground sm:text-[0.65rem]">
+          <span className="text-[0.55rem] font-medium uppercase tracking-[0.4em] text-foreground sm:text-[0.65rem]">
             Psychologue du travail · TCC &amp; EMDR
           </span>
         </div>
       </div>
-      <section className="mx-auto grid max-w-6xl gap-14 px-6 pb-20 pt-10 md:grid-cols-[1.1fr_0.9fr] md:items-start md:pt-14">
+      <section className="mx-auto grid max-w-6xl gap-10 md:gap-14 px-6 pb-20 pt-10 md:grid-cols-[1.1fr_0.9fr] md:items-start md:pt-14">
         <div>
           <p className="rise inline-flex items-center gap-3">
             <span aria-hidden="true" className="h-px w-10 bg-sand" />
@@ -78,7 +78,7 @@ function Home() {
             </a>
           </div>
 
-          <div className="rise mt-10 max-w-xl bg-primary p-7 text-lg leading-relaxed text-primary-foreground md:p-9">
+          <div className="rise mt-10 max-w-xl border border-primary/10 bg-primary/5 p-7 text-lg leading-relaxed text-foreground md:p-9">
             <p>
               Psychologue du travail, thérapeute en TCC et en EMDR. J'ai été salariée pendant
               dix-huit ans&nbsp;: je connais les entreprises parce que j'y ai travaillé, et les
@@ -91,7 +91,7 @@ function Home() {
 
         </div>
 
-        <figure className="rise">
+        <figure className="rise min-w-0">
           <div className="relative">
             <span
               aria-hidden="true"
@@ -107,30 +107,38 @@ function Home() {
             fetchPriority="high"
             />
           </div>
-          <figcaption className="mt-4 text-sm text-muted-foreground">
-            Karen Pinel — {SITE.role}
+          <figcaption className="mt-6 flex flex-col border-l-2 border-accent pl-4 md:flex-row md:items-baseline md:gap-4">
+            <span className="font-display text-lg italic text-foreground leading-none">Karen Pinel</span>
+            <span className="text-[0.6rem] font-medium uppercase tracking-[0.2em] text-muted-foreground leading-none">{SITE.role}</span>
           </figcaption>
         </figure>
       </section>
 
 
       <section className="mx-auto max-w-6xl px-6 pb-24">
-        <div className="rule-top grid gap-8 pt-10 md:grid-cols-[0.4fr_1.6fr] md:gap-12 md:pt-12">
-          <h2 className="font-sans text-2xl font-medium leading-tight text-foreground md:text-3xl">
-            Ce que je fais
+        <div className="rule-top grid gap-8 pt-10 md:grid-cols-[0.4fr_1.6fr] md:gap-10 md:gap-12 md:pt-12">
+          <h2 className="font-sans text-2xl font-semibold leading-tight text-foreground md:text-3xl">
+            Ce que je fais&nbsp;:
           </h2>
-          <div className="max-w-2xl space-y-4 bg-primary p-7 font-sans text-base font-normal leading-7 text-primary-foreground [text-wrap:wrap] md:p-10">
-            <p>J'interviens sur deux terrains complémentaires.</p>
-            <p>
-              Auprès des organisations, pour prévenir et traiter les situations qui abîment le
-              travail&nbsp;: enquêtes en harcèlement moral et sexuel, comportements toxiques et
-              agissements sexistes, audits RPS, formations, cellules de soutien par téléphone ou
-              in&nbsp;situ.
-            </p>
-            <p>
-              En cabinet, pour accompagner individuellement les personnes. Ce double regard,
-              collectif et individuel, est au cœur de ma pratique.
-            </p>
+          <div className="max-w-2xl bg-primary p-7 text-primary-foreground md:p-10">
+            <p className="text-lg leading-relaxed">J'interviens sur deux terrains complémentaires.</p>
+            <div className="mt-8 grid gap-px bg-primary-foreground/20 sm:grid-cols-2">
+              <div className="bg-primary py-6 pr-5 sm:pr-7">
+                <p className="text-xs font-medium uppercase tracking-[0.18em] text-sand">01 · Organisations</p>
+                <p className="mt-4 leading-7 text-primary-foreground/85">
+                  Prévenir et traiter les situations qui abîment le travail&nbsp;: enquêtes en
+                  harcèlement moral et sexuel, comportements toxiques et agissements sexistes,
+                  audits RPS, formations, cellules de soutien par téléphone ou in&nbsp;situ.
+                </p>
+              </div>
+              <div className="bg-primary pt-6 sm:pl-7">
+                <p className="text-xs font-medium uppercase tracking-[0.18em] text-sand">02 · Cabinet</p>
+                <p className="mt-4 leading-7 text-primary-foreground/85">
+                  Accompagner individuellement les personnes. Ce double regard, collectif et
+                  individuel, est au cœur de ma pratique.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -183,7 +191,7 @@ function Home() {
       </section>
 
       <section className="mx-auto max-w-6xl px-6 pb-24">
-        <div className="rule-top grid gap-12 pt-12 md:grid-cols-[0.4fr_1.6fr]">
+        <div className="rule-top grid gap-10 md:gap-12 pt-12 md:grid-cols-[0.4fr_1.6fr]">
           <h2 className="text-2xl md:text-3xl">Formations</h2>
           <ul className="space-y-5">
             {FORMATIONS.map((f) => (
@@ -191,8 +199,8 @@ function Home() {
                 key={f.year + f.label}
                 className="flex flex-col gap-1 border-b border-border pb-5 sm:flex-row sm:gap-10"
               >
-                <span className="w-16 shrink-0 text-sm font-medium text-primary">{f.year}</span>
-                <span className="leading-relaxed">{f.label}</span>
+                <span className="w-20 shrink-0 font-display text-lg italic text-primary">{f.year}</span>
+                <span className="leading-relaxed text-foreground/90">{f.label}</span>
               </li>
             ))}
           </ul>
@@ -200,15 +208,15 @@ function Home() {
       </section>
 
       <section className="mx-auto max-w-6xl px-6 pb-24">
-        <div className="rule-top grid gap-12 pt-12 md:grid-cols-[0.4fr_1.6fr]">
+        <div className="rule-top grid gap-10 md:gap-12 pt-12 md:grid-cols-[0.4fr_1.6fr]">
           <h2 className="text-2xl md:text-3xl">Travaux</h2>
-          <div className="max-w-2xl bg-primary p-7 text-primary-foreground md:p-10">
+          <div className="max-w-2xl bg-primary p-7 text-foreground md:p-10">
             <p className="text-sm uppercase tracking-[0.2em] text-sand">Mémoire de recherche</p>
             <p className="mt-3 text-lg leading-relaxed">
               Leadership authentique, engagement au travail et épanouissement des employés du
               secteur bancaire.
             </p>
-            <p className="mt-8 text-sm text-primary-foreground/70">
+            <p className="mt-8 text-sm text-foreground/70">
               Exercice en cabinet à {SITE.city} depuis 2020 · N° RPPS {SITE.rpps} · N° ADELI{" "}
               {SITE.adeli}
             </p>
@@ -223,11 +231,15 @@ function Home() {
             <Link
               key={item.title}
               to={item.href}
-              className="group bg-primary p-7 text-primary-foreground transition-colors hover:bg-primary/90"
+              className="group flex flex-col justify-between bg-primary p-7 text-primary-foreground transition-all hover:bg-primary/95 hover:shadow-xl"
             >
-              <h3 className="text-lg leading-snug text-primary-foreground">{item.title}</h3>
-              <p className="mt-3 text-sm leading-relaxed text-primary-foreground/80">{item.text}</p>
-              <span className="link-underline mt-5 inline-block text-sm text-sand">En savoir plus <span aria-hidden="true">→</span></span>
+              <div>
+                <h3 className="font-display text-xl leading-snug text-primary-foreground decoration-accent/30 group-hover:underline">{item.title}</h3>
+                <p className="mt-4 text-sm leading-relaxed text-primary-foreground/70">{item.text}</p>
+              </div>
+              <span className="mt-8 flex items-center gap-2 text-[0.7rem] font-bold uppercase tracking-widest text-sand">
+                Découvrir <span aria-hidden="true" className="transition-transform group-hover:translate-x-1">→</span>
+              </span>
             </Link>
           ))}
         </div>
@@ -244,11 +256,11 @@ function Home() {
         />
       </section>
 
-      <section className="mt-6 bg-primary text-primary-foreground">
+      <section className="mt-6 bg-primary text-foreground">
         <div className="mx-auto flex max-w-6xl flex-col items-start gap-8 px-6 py-16 md:flex-row md:items-center md:justify-between">
           <div>
             <h2 className="text-2xl md:text-3xl">Et si on en parlait&nbsp;?</h2>
-            <p className="mt-3 max-w-xl leading-relaxed text-primary-foreground/80">
+            <p className="mt-3 max-w-xl leading-relaxed text-foreground/80">
               Rendez-vous en cabinet à {SITE.city}, ou un simple appel pour définir ensemble la
               meilleure façon d'avancer.
             </p>

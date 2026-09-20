@@ -40,14 +40,14 @@ function Tarifs() {
               className="flex flex-col gap-2 border-b border-border py-8 sm:flex-row sm:items-baseline sm:justify-between sm:gap-10"
             >
               <div>
-                <p className="text-xl">{t.label}</p>
+                <p className="font-display text-xl italic">{t.label}</p>
                 {t.detail && (
                   <p className="mt-2 max-w-xl text-sm leading-relaxed text-muted-foreground">
                     {t.detail}
                   </p>
                 )}
               </div>
-               <p className="font-display text-3xl whitespace-nowrap text-primary">{t.price}</p>
+               <p className="font-display text-3xl whitespace-nowrap text-primary md:text-4xl">{t.price}</p>
             </li>
           ))}
         </ul>
