@@ -97,15 +97,34 @@ function Home() {
         </figure>
       </section>
 
-      <section className="border-y border-primary/20 bg-primary text-primary-foreground">
-        <div className="mx-auto grid max-w-6xl gap-px bg-primary-foreground/15 md:grid-cols-2">
+      <section className="mx-auto max-w-6xl px-6 pb-24">
+        <div className="rule-top grid gap-12 pt-12 md:grid-cols-[0.4fr_1.6fr]">
+          <h2 className="text-2xl md:text-3xl">Ce que je fais</h2>
+          <div className="max-w-2xl space-y-4 leading-relaxed text-muted-foreground">
+            <p>J'interviens sur deux terrains complémentaires.</p>
+            <p>
+              Auprès des organisations, pour prévenir et traiter les situations qui abîment le
+              travail&nbsp;: enquêtes en harcèlement moral et sexuel, comportements toxiques et
+              agissements sexistes, audits RPS, formations, cellules de soutien par téléphone ou
+              in&nbsp;situ.
+            </p>
+            <p>
+              En cabinet, pour accompagner individuellement les personnes. Ce double regard,
+              collectif et individuel, est au cœur de ma pratique.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section className="border-y border-border">
+        <div className="mx-auto grid max-w-6xl gap-px bg-border md:grid-cols-2">
           <Link
             to="/entreprises"
-            className="group bg-primary px-6 py-16 transition-colors hover:bg-primary/90 md:px-12 md:py-20"
+            className="group bg-background px-6 py-16 transition-colors hover:bg-secondary/70 md:px-12 md:py-20"
           >
-            <p className="text-[0.7rem] uppercase tracking-[0.24em] text-primary-foreground/70">01 — Vous, en entreprise</p>
+            <p className="text-[0.7rem] uppercase tracking-[0.24em] text-primary">01 — Vous, en entreprise</p>
             <h2 className="mt-5 text-3xl md:text-4xl">Intervenir dans l'organisation</h2>
-            <p className="mt-5 max-w-md leading-relaxed text-primary-foreground/80">
+            <p className="mt-5 max-w-md leading-relaxed text-muted-foreground">
               Enquêtes harcèlement, prévention des risques psychosociaux, formation, soutien des
               équipes.
             </p>
@@ -114,11 +133,11 @@ function Home() {
 
           <Link
             to="/particuliers"
-            className="group bg-primary px-6 py-16 transition-colors hover:bg-primary/90 md:px-12 md:py-20"
+            className="group bg-background px-6 py-16 transition-colors hover:bg-secondary/70 md:px-12 md:py-20"
           >
-            <p className="text-[0.7rem] uppercase tracking-[0.24em] text-primary-foreground/70">02 — Vous, à titre personnel</p>
+            <p className="text-[0.7rem] uppercase tracking-[0.24em] text-primary">02 — Vous, à titre personnel</p>
             <h2 className="mt-5 text-3xl md:text-4xl">Consulter en TCC ou en EMDR</h2>
-            <p className="mt-5 max-w-md leading-relaxed text-primary-foreground/80">
+            <p className="mt-5 max-w-md leading-relaxed text-muted-foreground">
               Un espace d'écoute, d'échange, d'interrogation et de compréhension. Séances individuelles et thérapie de couple.
             </p>
             <span className="link-underline mt-8 inline-block text-sm">Découvrir le suivi</span>
