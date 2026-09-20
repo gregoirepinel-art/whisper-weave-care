@@ -74,11 +74,12 @@ function Particuliers() {
           {SEANCES.map((s) => (
             <article
               key={s.title}
-              className="border-t-4 border-accent bg-background px-5 py-10 md:px-8"
+              className="group relative flex flex-col border-t border-accent/20 bg-background px-5 py-12 transition-colors hover:bg-accent/5 md:px-8"
             >
-              <p className="eyebrow">{s.duration}</p>
-              <h2 className="mt-4 text-2xl">{s.title}</h2>
-              <p className="mt-4 leading-relaxed text-muted-foreground">{s.text}</p>
+              <div className="absolute top-0 left-0 h-1 w-0 bg-accent transition-all group-hover:w-full" />
+              <p className="text-[0.6rem] font-bold uppercase tracking-[0.2em] text-accent">{s.duration}</p>
+              <h2 className="mt-6 font-display text-2xl text-foreground md:text-3xl">{s.title}</h2>
+              <p className="mt-6 leading-relaxed text-muted-foreground/90">{s.text}</p>
             </article>
           ))}
         </div>
@@ -86,7 +87,7 @@ function Particuliers() {
 
       <section className="mx-auto max-w-6xl px-6 pb-24">
         <div className="grid gap-14 md:grid-cols-[0.85fr_1.15fr]">
-          <h2 className="text-3xl leading-tight md:text-4xl">Deux approches, un même cap</h2>
+          <h2 className="text-3xl leading-tight md:text-4xl">Deux approches, un même cap&nbsp;:</h2>
           <div className="space-y-8">
             <div className="border-l-2 border-accent pl-6">
               <h3 className="text-xl">La thérapie TCC</h3>

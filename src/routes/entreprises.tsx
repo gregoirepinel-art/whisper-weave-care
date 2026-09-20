@@ -31,13 +31,13 @@ function Entreprises() {
       <PageIntro
         eyebrow="Entreprises et organisations"
         title="La psychologie dans les organisations de travail."
-        lead="J'interviens auprès de tous les acteurs de votre entreprise pour des enquêtes harcèlement avec neutralité, impartialité et professionnalisme. Pour la mise en place de cellule d'écoute et de soutien psychologique. Pour des conseils. Et pour de la formation : stress, harcèlement, émotions..."
+        lead="J'interviens auprès de tous les acteurs de votre entreprise pour conduire des enquêtes sur le harcèlement avec neutralité, impartialité et professionnalisme, mettre en place des cellules d'écoute et de soutien psychologique, conseiller les équipes et proposer des formations sur le stress, le harcèlement et les émotions."
       />
 
       <section className="mx-auto max-w-6xl px-6 pb-24">
         <div className="rule-top grid gap-12 pt-12 md:grid-cols-[0.85fr_1.15fr]">
           <h2 className="text-3xl leading-tight md:text-4xl">Pourquoi me contacter&nbsp;?</h2>
-          <div className="space-y-6 bg-primary p-7 text-lg leading-relaxed text-primary-foreground md:p-10">
+          <div className="space-y-6 border border-primary/10 bg-primary p-8 text-lg leading-relaxed text-primary-foreground shadow-2xl md:p-12 md:text-xl">
             <p>
               L'article L. 4121-1 du Code du travail oblige l'employeur à protéger la santé physique
               et mentale de ses salariés, et donc à prévenir les risques psychosociaux. Enquêtes,
@@ -55,8 +55,8 @@ function Entreprises() {
 
       <section className="mx-auto max-w-6xl px-6 pb-24">
         <div className="rule-top grid gap-12 pt-12 md:grid-cols-[0.85fr_1.15fr]">
-          <h2 className="text-3xl leading-tight md:text-4xl">Ma façon de travailler</h2>
-          <div className="space-y-6 bg-primary p-7 text-lg leading-relaxed text-primary-foreground md:p-10">
+          <h2 className="text-3xl leading-tight md:text-4xl">Ma façon de travailler&nbsp;:</h2>
+          <div className="space-y-6 border border-primary/10 bg-primary p-8 text-lg leading-relaxed text-primary-foreground shadow-2xl md:p-12 md:text-xl">
             <p>
               J'ai été salariée pendant dix-huit ans avant de devenir psychologue du travail. Je
               connais les contraintes réelles des organisations, les jeux d'acteurs, et ce que
@@ -75,7 +75,7 @@ function Entreprises() {
       <section className="mx-auto max-w-6xl px-6 pb-24">
         <div className="rule-top grid gap-12 pt-12 md:grid-cols-[0.85fr_1.15fr]">
           <div>
-            <h2 className="text-3xl leading-tight md:text-4xl">Parler de votre besoin</h2>
+            <h2 className="text-3xl leading-tight md:text-4xl">Parler de votre besoin&nbsp;:</h2>
             <p className="mt-4 max-w-md leading-relaxed text-muted-foreground">
               Décrivez la situation en quelques lignes. Je vous rappelle pour un premier échange
               sans engagement, puis je vous adresse une proposition et un devis.

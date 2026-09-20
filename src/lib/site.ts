@@ -2,7 +2,7 @@ export const SITE = {
   name: "Karen Pinel",
   role: "Psychologue du travail · Thérapeute TCC & EMDR",
   baseline: "La psychologie en action",
-  tagline: "Conseils · Coaching · Organisation · Formation",
+  tagline: "Conseil · Organisation · Formation · Accompagnement",
   phone: "06 99 97 04 08",
   phoneHref: "tel:+33699970408",
   email: "contact@savoirechanger.com",
@@ -39,7 +39,7 @@ export const FAQ = [
   },
   {
     q: "Que se passe-t-il lors de la première séance ?",
-    a: "Elle dure environ une heure. Nous faisons le tour de ce qui vous amène, de votre histoire et de vos attentes, puis nous décidons ensemble de la suite : TCC, EMDR, ou les deux. Aucun engagement n'est demandé.",
+    a: "Elle dure une heure. Nous faisons le tour de ce qui vous amène, de votre histoire et de vos attentes, puis nous décidons ensemble de la suite : TCC, EMDR, ou les deux. Aucun engagement n'est demandé.",
   },
   {
     q: "Comment annuler ou déplacer un rendez-vous ?",
@@ -47,7 +47,7 @@ export const FAQ = [
   },
   {
     q: "Vous intervenez en cas de harcèlement au travail ?",
-    a: "Oui. Je suis formée et habilitée à conduire des enquêtes harcèlement et comportements inappropriés en entreprise, avec neutralité, impartialité et confidentialité. J'accompagne aussi les directions, les RH et les représentants du personnel dans la prévention des risques psychosociaux et la mise en place de cellule d'écoute.",
+    a: "Oui. Je suis formée et habilitée à conduire des enquêtes sur le harcèlement et les comportements inappropriés en entreprise, avec neutralité, impartialité et confidentialité. J'accompagne aussi les directions, les RH et les représentants du personnel dans la prévention des risques psychosociaux et la mise en place de cellules d'écoute.",
   },
   {
     q: "Recevez-vous les enfants et les adolescents ?",
@@ -131,8 +131,8 @@ export const ENTREPRISE_SERVICES = [
 ] as const;
 
 export const FORMATIONS = [
-  { year: "2025", label: "Thérapie EMDR (thérapie des traumatismes) — EDEPHE, EMDR France, niveau 2" },
-  { year: "2024", label: "Thérapie EMDR (thérapie des traumatismes) — EDEPHE, EMDR France, niveau 1" },
+  { year: "2025", label: "Thérapie EMDR — EDEPHE, EMDR France, niveau 2" },
+  { year: "2024", label: "Thérapie EMDR — EDEPHE, EMDR France, niveau 1" },
   { year: "2020", label: "Thérapie TCC (cognitivo-comportementale) — AFTCC" },
   { year: "2019", label: "Diplôme et titre de psychologue — Université de Tours" },
 ] as const;

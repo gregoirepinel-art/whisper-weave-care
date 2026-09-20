@@ -91,7 +91,7 @@ function Home() {
 
         </div>
 
-        <figure className="rise">
+        <figure className="rise min-w-0">
           <div className="relative">
             <span
               aria-hidden="true"
@@ -107,8 +107,9 @@ function Home() {
             fetchPriority="high"
             />
           </div>
-          <figcaption className="mt-6 flex flex-col md:flex-row md:items-baseline md:gap-4 border-l-2 border-accent pl-4">
-            <span className="font-display text-lg italic text-foreground">Karen Pinel</span><span className="text-[0.6rem] font-medium uppercase tracking-widest text-muted-foreground">{SITE.role}</span>
+          <figcaption className="relative z-10 mt-6 flex min-w-0 flex-col gap-1 border-l-2 border-primary pl-4 sm:flex-row sm:items-baseline sm:gap-3">
+            <span className="shrink-0 font-sans text-sm font-semibold text-foreground">Karen Pinel</span>
+            <span className="min-w-0 text-xs leading-relaxed text-muted-foreground">{SITE.role}</span>
           </figcaption>
         </figure>
       </section>
@@ -116,21 +117,28 @@ function Home() {
 
       <section className="mx-auto max-w-6xl px-6 pb-24">
         <div className="rule-top grid gap-8 pt-10 md:grid-cols-[0.4fr_1.6fr] md:gap-12 md:pt-12">
-          <h2 className="font-sans text-2xl font-medium leading-tight text-foreground md:text-3xl">
-            Ce que je fais
+          <h2 className="font-sans text-2xl font-semibold leading-tight text-foreground md:text-3xl">
+            Ce que je fais&nbsp;:
           </h2>
-          <div className="max-w-2xl space-y-4 bg-primary p-7 font-sans text-base font-normal leading-7 text-foreground [text-wrap:wrap] md:p-10">
-            <p>J'interviens sur deux terrains complémentaires.</p>
-            <p>
-              Auprès des organisations, pour prévenir et traiter les situations qui abîment le
-              travail&nbsp;: enquêtes en harcèlement moral et sexuel, comportements toxiques et
-              agissements sexistes, audits RPS, formations, cellules de soutien par téléphone ou
-              in&nbsp;situ.
-            </p>
-            <p>
-              En cabinet, pour accompagner individuellement les personnes. Ce double regard,
-              collectif et individuel, est au cœur de ma pratique.
-            </p>
+          <div className="max-w-2xl bg-primary p-7 text-primary-foreground md:p-10">
+            <p className="text-lg leading-relaxed">J'interviens sur deux terrains complémentaires.</p>
+            <div className="mt-8 grid gap-px bg-primary-foreground/20 sm:grid-cols-2">
+              <div className="bg-primary py-6 pr-5 sm:pr-7">
+                <p className="text-xs font-medium uppercase tracking-[0.18em] text-sand">01 · Organisations</p>
+                <p className="mt-4 leading-7 text-primary-foreground/85">
+                  Prévenir et traiter les situations qui abîment le travail&nbsp;: enquêtes en
+                  harcèlement moral et sexuel, comportements toxiques et agissements sexistes,
+                  audits RPS, formations, cellules de soutien par téléphone ou in&nbsp;situ.
+                </p>
+              </div>
+              <div className="bg-primary pt-6 sm:pl-7">
+                <p className="text-xs font-medium uppercase tracking-[0.18em] text-sand">02 · Cabinet</p>
+                <p className="mt-4 leading-7 text-primary-foreground/85">
+                  Accompagner individuellement les personnes. Ce double regard, collectif et
+                  individuel, est au cœur de ma pratique.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
