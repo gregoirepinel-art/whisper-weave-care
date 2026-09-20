@@ -71,6 +71,11 @@ export function Footer() {
                   Mentions légales
                 </Link>
               </li>
+              <li>
+                <Link to="/politique-confidentialite" className="link-underline">
+                  Politique de confidentialité
+                </Link>
+              </li>
             </ul>
           </div>
         </div>

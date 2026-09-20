@@ -4,7 +4,7 @@ import { SITE } from "@/lib/site";
 
 const title = "Mentions légales — Karen Pinel, psychologue";
 const description =
-  "Mentions légales, hébergement et politique de confidentialité du site de Karen Pinel, psychologue à Saint-Avertin.";
+  "Mentions légales, hébergement et informations professionnelles du site de Karen Pinel, psychologue à Saint-Avertin.";
 
 export const Route = createFileRoute("/mentions-legales")({
   head: () => ({
@@ -13,6 +13,8 @@ export const Route = createFileRoute("/mentions-legales")({
       { name: "description", content: description },
       { property: "og:title", content: title },
       { property: "og:description", content: description },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary" },
       { name: "robots", content: "noindex" },
     ],
   }),
@@ -41,6 +43,8 @@ function Mentions() {
               </a>
               <br />
               N° RPPS : {SITE.rpps} · N° ADELI : {SITE.adeli}
+               <br />
+               N° SIRET : {SITE.siret}
             </p>
           </div>
 
@@ -48,8 +52,9 @@ function Mentions() {
             <h2 className="text-xl">Profession réglementée</h2>
             <p className="mt-3 leading-relaxed text-muted-foreground">
               Le titre de psychologue est protégé par la loi n° 85-772 du 25 juillet 1985. L'exercice
-              est soumis au respect du Code de déontologie des psychologues, notamment au secret
-              professionnel.
+              s'inscrit dans le respect du Code de déontologie des psychologues français, notamment
+              de ses principes de confidentialité, de respect de la personne et de responsabilité
+              professionnelle.
             </p>
           </div>
 
@@ -57,8 +62,6 @@ function Mentions() {
             <h2 className="text-xl">Identification de l'activité</h2>
             <p className="mt-3 leading-relaxed text-muted-foreground">
               Entreprise individuelle — profession libérale.
-              <br />
-              N° SIRET : à compléter.
               <br />
               Assurance responsabilité civile professionnelle : à compléter.
               <br />
@@ -69,19 +72,8 @@ function Mentions() {
           <div>
             <h2 className="text-xl">Hébergement</h2>
             <p className="mt-3 leading-relaxed text-muted-foreground">
-              Ce site est hébergé par Lovable Labs Incorporated, 2261 Market Street #5039, San
-              Francisco, CA 94114, États-Unis.
-            </p>
-          </div>
-
-
-          <div>
-            <h2 className="text-xl">Données personnelles</h2>
-            <p className="mt-3 leading-relaxed text-muted-foreground">
-              Les informations saisies dans le formulaire de contact (nom, e-mail, téléphone,
-              message) sont utilisées uniquement pour répondre à votre demande et ne sont ni
-              cédées ni revendues. Vous pouvez demander leur consultation, leur rectification ou
-              leur suppression en écrivant au cabinet.
+              Ce site est hébergé par Netlify, Inc., 2325 3rd Street, San Francisco, CA 94107,
+              États-Unis.
             </p>
           </div>
 
