@@ -53,7 +53,7 @@ function Home() {
     <>
       <section className="mx-auto grid max-w-6xl gap-14 px-6 pb-20 pt-16 md:grid-cols-[1.1fr_0.9fr] md:items-start md:pt-24">
         <div>
-          <p className="eyebrow rise">Cabinet de Saint-Avertin · Tours</p>
+          <p className="eyebrow rise text-primary">Cabinet de Saint-Avertin · Tours</p>
           <h1 className="rise mt-6 text-[2.6rem] leading-[1.05] md:text-[4.2rem]">
             Prendre soin de ce&nbsp;que&nbsp;le travail et la vie{" "}
             <span className="italic text-muted-foreground">laissent en suspens.</span>
@@ -68,17 +68,19 @@ function Home() {
             </a>
           </div>
 
-          <div className="rise mt-14 max-w-xl text-lg leading-relaxed text-muted-foreground">
+          <div className="rise mt-10 max-w-xl text-lg leading-relaxed text-muted-foreground">
             <p>
               Psychologue du travail, thérapeute en TCC et en EMDR. J'ai été salariée pendant
               dix-huit ans&nbsp;: je connais les entreprises parce que j'y ai travaillé, et les
-              salariés parce que je l'ai été.
+              salariés parce que je l'ai été. Ce passé irrigue ma façon de travailler&nbsp;: les
+              contraintes réelles des organisations, les jeux d'acteurs, et ce que traverse un
+              collectif quand une situation dérape.
             </p>
           </div>
 
-          <div className="rise mt-12 border-t border-border pt-10">
+          <div className="rise mt-10 border-t border-border pt-8">
             <h2 className="text-2xl md:text-3xl">Ce que je fais</h2>
-            <div className="mt-5 max-w-xl space-y-5 leading-relaxed text-muted-foreground">
+            <div className="mt-4 max-w-xl space-y-3 leading-relaxed text-muted-foreground">
               <p>J'interviens sur deux terrains complémentaires.</p>
               <p>
                 Auprès des organisations, pour prévenir et traiter les situations qui abîment le
@@ -136,19 +138,6 @@ function Home() {
             </p>
             <span className="link-underline mt-8 inline-block text-sm">Découvrir le suivi</span>
           </Link>
-        </div>
-      </section>
-
-      <section className="mx-auto max-w-6xl px-6 pb-24">
-        <div className="rule-top grid gap-12 pt-12 md:grid-cols-[0.4fr_1.6fr]">
-          <h2 className="text-2xl md:text-3xl">Qui suis-je</h2>
-          <div className="border-l-2 border-accent pl-7 text-lg leading-relaxed text-muted-foreground md:pl-10">
-            <p>
-              Ce passé de salariée irrigue ma façon de travailler&nbsp;: je connais les contraintes
-              réelles des organisations, les jeux d'acteurs, et ce que traverse un collectif quand
-              une situation dérape.
-            </p>
-          </div>
         </div>
       </section>
 
