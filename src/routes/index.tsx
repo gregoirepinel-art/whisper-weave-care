@@ -51,23 +51,13 @@ export const Route = createFileRoute("/")({
 function Home() {
   return (
     <>
-      <section className="mx-auto grid max-w-6xl gap-14 px-6 pb-20 pt-16 md:grid-cols-[1.1fr_0.9fr] md:items-end md:pt-24">
+      <section className="mx-auto grid max-w-6xl gap-14 px-6 pb-20 pt-16 md:grid-cols-[1.1fr_0.9fr] md:items-start md:pt-24">
         <div>
           <p className="eyebrow rise">Cabinet de Saint-Avertin · Tours</p>
           <h1 className="rise mt-6 text-[2.6rem] leading-[1.05] md:text-[4.2rem]">
-            Prendre soin de ce que
-            <br />
-            le travail et la vie
-            <br />
+            Prendre soin de ce&nbsp;que&nbsp;le travail et la vie{" "}
             <span className="italic text-muted-foreground">laissent en suspens.</span>
           </h1>
-          <p className="rise mt-8 max-w-xl text-lg leading-relaxed text-muted-foreground">
-            Psychologue du travail, thérapeute en TCC et en EMDR.
-            <br />
-            J'interviens auprès des organisations du travail : enquêtes harcèlement, formations et audits risques psychosociaux.
-            <br />
-            J'accueille en consultation les personnes pour un accompagnement personnalisé.
-          </p>
           <div className="rise mt-10 flex flex-wrap gap-3">
             <a href={SITE.doctolib} target="_blank" rel="noreferrer" className="btn-accent">
               Prendre rendez-vous <span aria-hidden="true">→</span>
@@ -76,6 +66,31 @@ function Home() {
             <a href={SITE.phoneHref} className="btn-ghost">
               {SITE.phone}
             </a>
+          </div>
+
+          <div className="rise mt-14 max-w-xl text-lg leading-relaxed text-muted-foreground">
+            <p>
+              Psychologue du travail, thérapeute en TCC et en EMDR. J'ai été salariée pendant
+              dix-huit ans&nbsp;: je connais les entreprises parce que j'y ai travaillé, et les
+              salariés parce que je l'ai été.
+            </p>
+          </div>
+
+          <div className="rise mt-12 border-t border-border pt-10">
+            <h2 className="text-2xl md:text-3xl">Ce que je fais</h2>
+            <div className="mt-5 max-w-xl space-y-5 leading-relaxed text-muted-foreground">
+              <p>J'interviens sur deux terrains complémentaires.</p>
+              <p>
+                Auprès des organisations, pour prévenir et traiter les situations qui abîment le
+                travail&nbsp;: enquêtes en harcèlement moral et sexuel, comportements toxiques et
+                agissements sexistes, audits RPS, formations, cellules de soutien par téléphone ou
+                in&nbsp;situ.
+              </p>
+              <p>
+                En cabinet, pour accompagner individuellement les personnes. Ce double regard,
+                collectif et individuel, est au cœur de ma pratique.
+              </p>
+            </div>
           </div>
         </div>
 
@@ -117,30 +132,13 @@ function Home() {
             <h2 className="mt-5 text-3xl md:text-4xl">Intervenir dans l'organisation</h2>
             <p className="mt-5 max-w-md leading-relaxed text-muted-foreground">
               Enquêtes harcèlement, prévention des risques psychosociaux, formation, coaching de
-              managers. Dix-sept ans en entreprise avant d'exercer à mon compte.
+              managers. Dix-huit ans en entreprise avant d'exercer à mon compte.
             </p>
             <span className="link-underline mt-8 inline-block text-sm">Voir les prestations</span>
           </Link>
         </div>
       </section>
 
-      <section className="mx-auto max-w-6xl px-6 py-24">
-        <div className="grid gap-14 md:grid-cols-[0.85fr_1.15fr]">
-          <h2 className="text-3xl leading-tight md:text-4xl">Pourquoi consulter&nbsp;?</h2>
-          <div className="space-y-6 text-lg leading-relaxed text-muted-foreground">
-            <p>
-              Consulter un psychologue ne signifie pas que vous êtes faible, mais que vous êtes
-              suffisamment fort pour prendre en charge vos propres souffrances, interrogations et
-              émotions, sans les faire supporter à vos proches.
-            </p>
-            <p>
-              Dans un monde parfois difficile, il est important de chercher le soutien nécessaire
-              pour mieux avancer. Mon accompagnement se base sur le dialogue, le questionnement et
-              la mise en action.
-            </p>
-          </div>
-        </div>
-      </section>
 
       <section className="mx-auto max-w-6xl px-6 pb-24">
         <p className="eyebrow">Domaines d'accompagnement</p>

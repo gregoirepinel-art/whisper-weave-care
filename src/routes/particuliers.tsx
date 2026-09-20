@@ -48,9 +48,23 @@ function Particuliers() {
       <PageIntro
         eyebrow="Particuliers"
         title="Un espace d'écoute, de compréhension et d'action."
-        lead="Consulter un psychologue ne signifie pas que vous êtes faible, mais que vous êtes suffisamment fort pour prendre en charge vos propres souffrances, interrogations et émotions, sans les faire supporter à vos proches."
       >
-        <a href={SITE.doctolib} target="_blank" rel="noreferrer" className="btn-accent">
+        <div className="max-w-2xl text-left">
+          <p className="eyebrow !text-accent">Pourquoi me consulter&nbsp;?</p>
+          <p className="mt-4 text-lg leading-relaxed text-primary-foreground/75">
+            Parce que vous êtes suffisamment fort pour prendre en charge vos propres souffrances,
+            interrogations et émotions, sans les faire porter à votre entourage. Dans un monde
+            parfois difficile, il est important de chercher le soutien nécessaire pour mieux
+            avancer. Mon accompagnement se base sur le dialogue, le questionnement et la mise en
+            action.
+          </p>
+        </div>
+        <a
+          href={SITE.doctolib}
+          target="_blank"
+          rel="noreferrer"
+          className="btn-accent mt-8 inline-flex"
+        >
           Réserver sur Doctolib <span aria-hidden="true">→</span>
         </a>
       </PageIntro>
