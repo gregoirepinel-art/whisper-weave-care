@@ -110,15 +110,15 @@ function Home() {
         </figure>
       </section>
 
-      <section className="border-y border-border bg-secondary/60">
-        <div className="mx-auto grid max-w-6xl gap-px bg-border md:grid-cols-2">
+      <section className="border-y border-primary/20 bg-primary text-primary-foreground">
+        <div className="mx-auto grid max-w-6xl gap-px bg-primary-foreground/15 md:grid-cols-2">
           <Link
             to="/particuliers"
-            className="group bg-background px-6 py-16 transition-colors hover:bg-secondary/70 md:px-12 md:py-20"
+            className="group bg-primary px-6 py-16 transition-colors hover:bg-primary/90 md:px-12 md:py-20"
           >
-            <p className="eyebrow">01 — Vous, à titre personnel</p>
+            <p className="text-[0.7rem] uppercase tracking-[0.24em] text-primary-foreground/70">01 — Vous, à titre personnel</p>
             <h2 className="mt-5 text-3xl md:text-4xl">Consulter en TCC ou en EMDR</h2>
-            <p className="mt-5 max-w-md leading-relaxed text-muted-foreground">
+            <p className="mt-5 max-w-md leading-relaxed text-primary-foreground/80">
               Un espace d'écoute, d'échange, d'interrogation et de compréhension. Séances individuelles et thérapie de couple.
             </p>
             <span className="link-underline mt-8 inline-block text-sm">Découvrir le suivi</span>
@@ -126,11 +126,11 @@ function Home() {
 
           <Link
             to="/entreprises"
-            className="group bg-background px-6 py-16 transition-colors hover:bg-secondary/70 md:px-12 md:py-20"
+            className="group bg-primary px-6 py-16 transition-colors hover:bg-primary/90 md:px-12 md:py-20"
           >
-            <p className="eyebrow">02 — Vous, en entreprise</p>
+            <p className="text-[0.7rem] uppercase tracking-[0.24em] text-primary-foreground/70">02 — Vous, en entreprise</p>
             <h2 className="mt-5 text-3xl md:text-4xl">Intervenir dans l'organisation</h2>
-            <p className="mt-5 max-w-md leading-relaxed text-muted-foreground">
+            <p className="mt-5 max-w-md leading-relaxed text-primary-foreground/80">
               Enquêtes harcèlement, prévention des risques psychosociaux, formation, coaching de
               managers. Dix-huit ans en entreprise avant d'exercer à mon compte.
             </p>
@@ -222,6 +222,29 @@ function Home() {
           width="1442"
           height="361"
         />
+      </section>
+
+      <section className="mt-6 bg-primary text-primary-foreground">
+        <div className="mx-auto flex max-w-6xl flex-col items-start gap-8 px-6 py-16 md:flex-row md:items-center md:justify-between">
+          <div>
+            <h2 className="text-2xl md:text-3xl">Et si on en parlait&nbsp;?</h2>
+            <p className="mt-3 max-w-xl leading-relaxed text-primary-foreground/80">
+              Rendez-vous en cabinet à {SITE.city}, ou un simple appel pour définir ensemble la
+              meilleure façon d'avancer.
+            </p>
+          </div>
+          <div className="flex flex-wrap gap-3">
+            <a href={SITE.doctolib} target="_blank" rel="noreferrer" className="btn-accent">
+              Prendre rendez-vous <span aria-hidden="true">→</span>
+            </a>
+            <a
+              href={SITE.phoneHref}
+              className="inline-flex items-center rounded-full border border-primary-foreground/40 px-6 py-2.5 text-sm transition-colors hover:bg-primary-foreground/10"
+            >
+              {SITE.phone}
+            </a>
+          </div>
+        </div>
       </section>
 
       <section className="mx-auto max-w-6xl px-6 pb-8">
