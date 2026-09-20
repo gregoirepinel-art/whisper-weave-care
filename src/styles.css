@@ -209,6 +209,19 @@
   color: var(--muted-foreground);
 }
 
+@layer base {
+  p {
+    text-align: justify;
+    hyphens: auto;
+    text-wrap: pretty;
+  }
+
+  p.eyebrow {
+    text-align: left;
+    hyphens: none;
+  }
+}
+
 @utility rule-top {
   border-top: 1px solid var(--border);
 }

@@ -1,24 +1,11 @@
-# Ajustements
+# Roadmap
 
-- [x] Mettre davantage en valeur la réservation Doctolib sur la page Particuliers.
-- [x] Uniformiser la couleur du bouton « Prendre rendez-vous » sur tout le site.
-- [x] Corriger la grille de la page Contact (4 encadrés alignés).
-- [x] Afficher l'e-mail dans le bas de page et sur l'accueil.
-- [x] Page « Questions fréquentes » + données structurées FAQ.
-- [x] Image de partage (aperçu des liens) sur toutes les pages.
-- [x] Barre fixe « Appeler / Prendre rendez-vous » sur téléphone.
-- [x] Mettre à jour les mentions légales : SIRET, coordonnées complètes et hébergeur Netlify.
-- [x] Ajouter une politique de confidentialité RGPD complète et son accès en bas de page.
-- [x] Ajouter une bannière de consentement avant Google Analytics et la carte Google.
-- [x] Forcer la redirection vers HTTPS et vérifier l’adresse publique sécurisée.
-- [x] Mentionner explicitement le Code de déontologie des psychologues français.
-- [ ] Notification e-mail à chaque message du formulaire (nécessite la mise en place de l'envoi d'e-mails).
-- [ ] Faire confirmer par Karen le lien Doctolib (la fiche répond, mais son adresse contient « Joué-lès-Tours » alors que le cabinet est à Saint-Avertin).
-- [ ] Recevoir les informations d'assurance RC professionnelle.
-- [x] Ajouter les conditions générales d'utilisation.
-- [x] Ajouter le sitemap et sa déclaration dans robots.txt.
-- [x] Compresser les images et créer un visuel de partage 1200 × 630.
-- [x] Mettre la page 404 en français.
-- [x] Renforcer le formulaire avec validation côté serveur et champ anti-spam.
-- [x] Ajouter le consentement préalable à Google Analytics et à la carte Google.
-- [ ] Relier la propriété Google Analytics (connexion refusée lors de la configuration).
+- [x] Accueil : « Qui suis-je » retiré, contenu intégré au texte d'intro du haut
+- [x] Accueil : touche de bleu en haut (surtitre « Cabinet de Saint-Avertin · Tours » en bleu)
+- [x] Typo : texte justifié avec césure, espacement resserré dans « Ce que je fais »
+- [x] Vérifié mobile (602px) + desktop, build OK
+
+## Reste ouvert (bloqué)
+- Notification e-mail du formulaire : attend un service d'envoi
+- Lien Doctolib à confirmer par Karen (fiche « Joué-lès-Tours » vs cabinet Saint-Avertin)
+- Assurance RC professionnelle : placeholder dans mentions-legales.tsx
