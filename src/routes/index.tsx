@@ -53,7 +53,7 @@ function Home() {
     <>
       <div className="w-full bg-primary">
         <div className="mx-auto flex h-10 max-w-6xl items-center px-6">
-          <span className="text-[0.55rem] font-medium uppercase tracking-[0.4em] text-primary-foreground sm:text-[0.65rem]">
+          <span className="text-[0.55rem] font-medium uppercase tracking-[0.4em] text-foreground sm:text-[0.65rem]">
             Psychologue du travail · TCC &amp; EMDR
           </span>
         </div>
@@ -78,7 +78,7 @@ function Home() {
             </a>
           </div>
 
-          <div className="rise mt-10 max-w-xl bg-primary p-7 text-lg leading-relaxed text-primary-foreground md:p-9">
+          <div className="rise mt-10 max-w-xl border border-primary/10 bg-primary/5 p-7 text-lg leading-relaxed text-foreground md:p-9">
             <p>
               Psychologue du travail, thérapeute en TCC et en EMDR. J'ai été salariée pendant
               dix-huit ans&nbsp;: je connais les entreprises parce que j'y ai travaillé, et les
@@ -107,8 +107,8 @@ function Home() {
             fetchPriority="high"
             />
           </div>
-          <figcaption className="mt-4 text-sm text-muted-foreground">
-            Karen Pinel — {SITE.role}
+          <figcaption className="mt-6 flex flex-col md:flex-row md:items-baseline md:gap-4 border-l-2 border-accent pl-4">
+            <span className="font-display text-lg italic text-foreground">Karen Pinel</span><span className="text-[0.6rem] font-medium uppercase tracking-widest text-muted-foreground">{SITE.role}</span>
           </figcaption>
         </figure>
       </section>
@@ -119,7 +119,7 @@ function Home() {
           <h2 className="font-sans text-2xl font-medium leading-tight text-foreground md:text-3xl">
             Ce que je fais
           </h2>
-          <div className="max-w-2xl space-y-4 bg-primary p-7 font-sans text-base font-normal leading-7 text-primary-foreground [text-wrap:wrap] md:p-10">
+          <div className="max-w-2xl space-y-4 bg-primary p-7 font-sans text-base font-normal leading-7 text-foreground [text-wrap:wrap] md:p-10">
             <p>J'interviens sur deux terrains complémentaires.</p>
             <p>
               Auprès des organisations, pour prévenir et traiter les situations qui abîment le
@@ -139,7 +139,7 @@ function Home() {
         <div className="mx-auto grid max-w-6xl gap-px bg-primary-foreground/20 md:grid-cols-2">
           <Link
             to="/entreprises"
-            className="group relative overflow-hidden bg-primary px-6 py-16 text-primary-foreground transition-colors hover:bg-primary/90 md:px-12 md:py-20"
+            className="group relative overflow-hidden bg-primary px-6 py-16 text-foreground transition-colors hover:bg-primary/90 md:px-12 md:py-20"
           >
             <span
               aria-hidden="true"
@@ -151,8 +151,8 @@ function Home() {
               <span aria-hidden="true" className="h-0.5 w-4 bg-sand" />
               Vous, en entreprise
             </p>
-            <h2 className="mt-5 text-3xl text-primary-foreground md:text-4xl">Intervenir dans l'organisation</h2>
-            <p className="mt-5 max-w-md leading-relaxed text-primary-foreground/80">
+            <h2 className="mt-5 text-3xl text-foreground md:text-4xl">Intervenir dans l'organisation</h2>
+            <p className="mt-5 max-w-md leading-relaxed text-foreground/80">
               Enquêtes harcèlement, prévention des risques psychosociaux, formation, soutien des
               équipes.
             </p>
@@ -161,7 +161,7 @@ function Home() {
 
           <Link
             to="/particuliers"
-            className="group relative overflow-hidden bg-primary px-6 py-16 text-primary-foreground transition-colors hover:bg-primary/90 md:px-12 md:py-20"
+            className="group relative overflow-hidden bg-primary px-6 py-16 text-foreground transition-colors hover:bg-primary/90 md:px-12 md:py-20"
           >
             <span
               aria-hidden="true"
@@ -173,8 +173,8 @@ function Home() {
               <span aria-hidden="true" className="h-0.5 w-4 bg-sand" />
               Vous, à titre personnel
             </p>
-            <h2 className="mt-5 text-3xl text-primary-foreground md:text-4xl">Consulter en TCC ou en EMDR</h2>
-            <p className="mt-5 max-w-md leading-relaxed text-primary-foreground/80">
+            <h2 className="mt-5 text-3xl text-foreground md:text-4xl">Consulter en TCC ou en EMDR</h2>
+            <p className="mt-5 max-w-md leading-relaxed text-foreground/80">
               Un espace d'écoute, d'échange, d'interrogation et de compréhension. Séances individuelles et thérapie de couple.
             </p>
             <span className="link-underline mt-8 inline-block text-sm">Découvrir le suivi</span>
@@ -202,13 +202,13 @@ function Home() {
       <section className="mx-auto max-w-6xl px-6 pb-24">
         <div className="rule-top grid gap-12 pt-12 md:grid-cols-[0.4fr_1.6fr]">
           <h2 className="text-2xl md:text-3xl">Travaux</h2>
-          <div className="max-w-2xl bg-primary p-7 text-primary-foreground md:p-10">
+          <div className="max-w-2xl bg-primary p-7 text-foreground md:p-10">
             <p className="text-sm uppercase tracking-[0.2em] text-sand">Mémoire de recherche</p>
             <p className="mt-3 text-lg leading-relaxed">
               Leadership authentique, engagement au travail et épanouissement des employés du
               secteur bancaire.
             </p>
-            <p className="mt-8 text-sm text-primary-foreground/70">
+            <p className="mt-8 text-sm text-foreground/70">
               Exercice en cabinet à {SITE.city} depuis 2020 · N° RPPS {SITE.rpps} · N° ADELI{" "}
               {SITE.adeli}
             </p>
@@ -223,10 +223,10 @@ function Home() {
             <Link
               key={item.title}
               to={item.href}
-              className="group bg-primary p-7 text-primary-foreground transition-colors hover:bg-primary/90"
+              className="group bg-primary p-7 text-foreground transition-colors hover:bg-primary/90"
             >
-              <h3 className="text-lg leading-snug text-primary-foreground">{item.title}</h3>
-              <p className="mt-3 text-sm leading-relaxed text-primary-foreground/80">{item.text}</p>
+              <h3 className="text-lg leading-snug text-foreground">{item.title}</h3>
+              <p className="mt-3 text-sm leading-relaxed text-foreground/80">{item.text}</p>
               <span className="link-underline mt-5 inline-block text-sm text-sand">En savoir plus <span aria-hidden="true">→</span></span>
             </Link>
           ))}
@@ -244,11 +244,11 @@ function Home() {
         />
       </section>
 
-      <section className="mt-6 bg-primary text-primary-foreground">
+      <section className="mt-6 bg-primary text-foreground">
         <div className="mx-auto flex max-w-6xl flex-col items-start gap-8 px-6 py-16 md:flex-row md:items-center md:justify-between">
           <div>
             <h2 className="text-2xl md:text-3xl">Et si on en parlait&nbsp;?</h2>
-            <p className="mt-3 max-w-xl leading-relaxed text-primary-foreground/80">
+            <p className="mt-3 max-w-xl leading-relaxed text-foreground/80">
               Rendez-vous en cabinet à {SITE.city}, ou un simple appel pour définir ensemble la
               meilleure façon d'avancer.
             </p>
