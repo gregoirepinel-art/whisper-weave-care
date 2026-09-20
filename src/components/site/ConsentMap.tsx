@@ -19,7 +19,7 @@ export function ConsentMap({ src, title }: { src: string; title: string }) {
   return (
     <div className="flex min-h-[360px] items-center justify-center border border-border bg-secondary/60 px-6 text-center">
       <div className="max-w-md">
-        <p className="font-display text-2xl">Afficher la carte Google</p>
+        <p className="font-sans text-xl font-medium text-foreground">Afficher la carte Google</p>
         <p className="mt-3 text-sm leading-relaxed text-muted-foreground">La carte est bloquée tant que vous n'avez pas accepté les services externes.</p>
         <Button type="button" className="mt-5" onClick={() => saveConsent("accepted")}>Accepter et afficher la carte</Button>
       </div>

@@ -54,7 +54,7 @@ function Faq() {
         <dl className="rule-top pt-2">
           {FAQ.map((item) => (
             <div key={item.q} className="border-b border-border py-8">
-              <dt className="font-display text-xl leading-snug text-foreground">{item.q}</dt>
+              <dt className="font-sans text-lg font-medium leading-snug text-foreground">{item.q}</dt>
               <dd className="mt-3 leading-relaxed text-muted-foreground">{item.a}</dd>
             </div>
           ))}
