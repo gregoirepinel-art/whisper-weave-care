@@ -185,10 +185,15 @@ function Home() {
         <p className="eyebrow">Domaines d'accompagnement</p>
         <div className="mt-10 grid gap-px bg-border sm:grid-cols-2 lg:grid-cols-4">
           {EXPERTISES.map((item) => (
-            <article key={item.title} className="bg-background p-7">
+            <Link
+              key={item.title}
+              to={item.href}
+              className="group bg-background p-7 transition-colors hover:bg-secondary/70"
+            >
               <h3 className="text-lg leading-snug">{item.title}</h3>
               <p className="mt-3 text-sm leading-relaxed text-muted-foreground">{item.text}</p>
-            </article>
+              <span className="link-underline mt-5 inline-block text-sm">En savoir plus <span aria-hidden="true">→</span></span>
+            </Link>
           ))}
         </div>
       </section>

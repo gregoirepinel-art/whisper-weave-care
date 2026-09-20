@@ -64,34 +64,42 @@ export const EXPERTISES = [
   {
     title: "Accompagnement du burn-out",
     text: "Comprendre l'épuisement, retrouver de l'énergie et reconstruire un rapport tenable au travail.",
+    href: "/particuliers",
   },
   {
     title: "Gestion du stress",
     text: "Des outils concrets pour réguler la tension, l'anxiété d'anticipation et la charge mentale.",
+    href: "/particuliers",
   },
   {
     title: "Thérapie EMDR",
     text: "Traitement des traumatismes et des souvenirs qui continuent de peser au quotidien.",
+    href: "/particuliers",
   },
   {
     title: "Thérapie TCC",
     text: "Thérapie cognitive et comportementale : travailler sur les pensées, les émotions et les actes.",
+    href: "/particuliers",
   },
   {
     title: "Souffrance au travail",
     text: "Conflits, harcèlement, perte de sens : mettre des mots et retrouver une marge de manœuvre.",
+    href: "/entreprises",
   },
   {
     title: "Troubles anxieux",
     text: "Anxiété généralisée, crises d'angoisse, phobies : apaiser durablement.",
+    href: "/particuliers",
   },
   {
     title: "Thérapie de couple",
     text: "Rétablir le dialogue, sortir des schémas répétitifs, décider ensemble de la suite.",
+    href: "/particuliers",
   },
   {
     title: "Confiance et affirmation de soi",
     text: "Estime de soi, communication, transition de carrière : définir vos objectifs et les atteindre.",
+    href: "/particuliers",
   },
 ] as const;
 
