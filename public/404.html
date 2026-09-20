@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Karen Pinel — Psychologue</title>
+    <script>
+      // GitHub Pages sert 404.html pour toute route inconnue :
+      // on renvoie vers la page d'accueil du site.
+      (function () {
+        var base = "/whisper-weave-care/";
+        var path = window.location.pathname;
+        if (path.indexOf(base) === 0) {
+          var rest = path.slice(base.length).replace(/\/+$/, "");
+          // Les routes internes existantes (/, /contact, /tarifs…) sont servies
+          // en fichiers statiques ; on ne redirige que si elles n'existent pas.
+          if (rest === "") {
+            window.location.replace(base);
+            return;
+          }
+        }
+        window.location.replace(base);
+      })();
+    </script>
+  </head>
+  <body>
+    <p>Redirection vers la page d'accueil…</p>
+    <a href="/whisper-weave-care/">Karen Pinel — Psychologue</a>
+  </body>
+</html>

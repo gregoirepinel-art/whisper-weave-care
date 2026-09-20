@@ -12,4 +12,10 @@ export default defineConfig({
     // nitro/vite builds from this
     server: { entry: "server" },
   },
+  vite: {
+    // GitHub Pages project sites are served from a sub-path (/whisper-weave-care/).
+    // Set BASE_PATH at build time in the GitHub Actions workflow; the Lovable
+    // build leaves it unset and keeps the default "/" base.
+    base: process.env["BASE_PATH"] || "/",
+  },
 });
