@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { useServerFn } from "@tanstack/react-start";
+import { Link } from "@tanstack/react-router";
 import { sendContactMessage } from "@/lib/contact.functions";
 
 const inputClass =
@@ -127,7 +128,11 @@ export function ContactForm({
 
       <p className="text-xs leading-relaxed text-muted-foreground">
         Les informations transmises servent uniquement à répondre à votre demande. Ce formulaire
-        n'est pas un service d'urgence : en cas de détresse immédiate, appelez le 15 ou le 3114.
+        n'est pas un service d'urgence : en cas de détresse immédiate, appelez le 15 ou le 3114. {" "}
+        <Link to="/politique-confidentialite" className="link-underline">
+          Consulter la politique de confidentialité
+        </Link>
+        .
       </p>
     </form>
   );
