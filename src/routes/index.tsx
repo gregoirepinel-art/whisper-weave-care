@@ -79,22 +79,6 @@ function Home() {
             </p>
           </div>
 
-          <div className="rise mt-10 border-t border-border pt-8">
-            <h2 className="text-2xl md:text-3xl">Ce que je fais</h2>
-            <div className="mt-4 max-w-xl space-y-3 leading-relaxed text-muted-foreground">
-              <p>J'interviens sur deux terrains complémentaires.</p>
-              <p>
-                Auprès des organisations, pour prévenir et traiter les situations qui abîment le
-                travail&nbsp;: enquêtes en harcèlement moral et sexuel, comportements toxiques et
-                agissements sexistes, audits RPS, formations, cellules de soutien par téléphone ou
-                in&nbsp;situ.
-              </p>
-              <p>
-                En cabinet, pour accompagner individuellement les personnes. Ce double regard,
-                collectif et individuel, est au cœur de ma pratique.
-              </p>
-            </div>
-          </div>
         </div>
 
         <figure className="rise">

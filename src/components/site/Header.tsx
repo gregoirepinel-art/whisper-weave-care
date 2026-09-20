@@ -16,6 +16,7 @@ export function Header() {
 
   return (
     <header className="sticky top-0 z-50 border-b border-border/60 bg-background/85 backdrop-blur-md">
+      <div aria-hidden="true" className="h-1 w-full bg-primary" />
       <div className="mx-auto flex h-20 max-w-6xl items-center justify-between gap-6 px-6">
         <Link to="/" className="flex flex-col leading-none" onClick={() => setOpen(false)}>
           <span className="font-display text-xl tracking-tight text-foreground">{SITE.name}</span>
