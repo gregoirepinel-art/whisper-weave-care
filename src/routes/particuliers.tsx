@@ -86,7 +86,7 @@ function Particuliers() {
       </section>
 
       <section className="mx-auto max-w-6xl px-6 pb-24">
-        <div className="grid gap-14 md:grid-cols-[0.85fr_1.15fr]">
+        <div className="grid gap-10 md:gap-14 md:grid-cols-[0.85fr_1.15fr]">
           <h2 className="text-3xl leading-tight md:text-4xl">Deux approches, un même cap&nbsp;:</h2>
           <div className="space-y-8">
             <div className="border-l-2 border-accent pl-6">

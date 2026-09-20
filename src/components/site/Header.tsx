@@ -19,7 +19,7 @@ export function Header() {
       <div aria-hidden="true" className="h-1 w-full bg-primary" />
       <div className="mx-auto flex h-20 max-w-6xl items-center justify-between gap-6 px-6">
         <Link to="/" className="flex flex-col leading-none" onClick={() => setOpen(false)}>
-          <span className="font-display text-xl tracking-tight text-foreground">{SITE.name}</span>
+          <span className="font-display text-2xl tracking-tight text-foreground">{SITE.name}</span>
           <span className="mt-1 text-[0.65rem] uppercase tracking-[0.22em] text-muted-foreground">
             Psychologue · Tours Saint-Avertin
           </span>
@@ -62,13 +62,13 @@ export function Header() {
 
       {open && (
         <div className="border-t border-border/60 bg-background lg:hidden">
-          <nav className="mx-auto flex max-w-6xl flex-col gap-1 px-6 py-5">
+          <nav className="mx-auto flex max-w-6xl flex-col gap-2 px-6 py-10">
             {NAV.map((item) => (
               <Link
                 key={item.to}
                 to={item.to}
                 onClick={() => setOpen(false)}
-                className="py-2 text-base text-muted-foreground"
+                className="py-3 font-display text-2xl text-muted-foreground transition-colors hover:text-foreground"
                 activeProps={{ className: "text-foreground" }}
               >
                 {item.label}

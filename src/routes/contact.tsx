@@ -97,7 +97,7 @@ function Contact() {
       </section>
 
       <section className="mx-auto max-w-6xl px-6 pb-24">
-        <div className="rule-top grid gap-12 pt-12 md:grid-cols-[0.85fr_1.15fr]">
+        <div className="rule-top grid gap-10 md:gap-12 pt-12 md:grid-cols-[0.85fr_1.15fr]">
           <h2 className="text-3xl leading-tight md:text-4xl">Écrire un message</h2>
           <ContactForm />
         </div>

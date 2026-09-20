@@ -58,7 +58,7 @@ function Home() {
           </span>
         </div>
       </div>
-      <section className="mx-auto grid max-w-6xl gap-14 px-6 pb-20 pt-10 md:grid-cols-[1.1fr_0.9fr] md:items-start md:pt-14">
+      <section className="mx-auto grid max-w-6xl gap-10 md:gap-14 px-6 pb-20 pt-10 md:grid-cols-[1.1fr_0.9fr] md:items-start md:pt-14">
         <div>
           <p className="rise inline-flex items-center gap-3">
             <span aria-hidden="true" className="h-px w-10 bg-sand" />
@@ -107,16 +107,16 @@ function Home() {
             fetchPriority="high"
             />
           </div>
-          <figcaption className="relative z-10 mt-6 flex min-w-0 flex-col gap-1 border-l-2 border-primary pl-4 sm:flex-row sm:items-baseline sm:gap-3">
-            <span className="shrink-0 font-sans text-sm font-semibold text-foreground">Karen Pinel</span>
-            <span className="min-w-0 text-xs leading-relaxed text-muted-foreground">{SITE.role}</span>
+          <figcaption className="mt-6 flex flex-col border-l-2 border-accent pl-4 md:flex-row md:items-baseline md:gap-4">
+            <span className="font-display text-lg italic text-foreground leading-none">Karen Pinel</span>
+            <span className="text-[0.6rem] font-medium uppercase tracking-[0.2em] text-muted-foreground leading-none">{SITE.role}</span>
           </figcaption>
         </figure>
       </section>
 
 
       <section className="mx-auto max-w-6xl px-6 pb-24">
-        <div className="rule-top grid gap-8 pt-10 md:grid-cols-[0.4fr_1.6fr] md:gap-12 md:pt-12">
+        <div className="rule-top grid gap-8 pt-10 md:grid-cols-[0.4fr_1.6fr] md:gap-10 md:gap-12 md:pt-12">
           <h2 className="font-sans text-2xl font-semibold leading-tight text-foreground md:text-3xl">
             Ce que je fais&nbsp;:
           </h2>
@@ -191,7 +191,7 @@ function Home() {
       </section>
 
       <section className="mx-auto max-w-6xl px-6 pb-24">
-        <div className="rule-top grid gap-12 pt-12 md:grid-cols-[0.4fr_1.6fr]">
+        <div className="rule-top grid gap-10 md:gap-12 pt-12 md:grid-cols-[0.4fr_1.6fr]">
           <h2 className="text-2xl md:text-3xl">Formations</h2>
           <ul className="space-y-5">
             {FORMATIONS.map((f) => (
@@ -208,7 +208,7 @@ function Home() {
       </section>
 
       <section className="mx-auto max-w-6xl px-6 pb-24">
-        <div className="rule-top grid gap-12 pt-12 md:grid-cols-[0.4fr_1.6fr]">
+        <div className="rule-top grid gap-10 md:gap-12 pt-12 md:grid-cols-[0.4fr_1.6fr]">
           <h2 className="text-2xl md:text-3xl">Travaux</h2>
           <div className="max-w-2xl bg-primary p-7 text-foreground md:p-10">
             <p className="text-sm uppercase tracking-[0.2em] text-sand">Mémoire de recherche</p>

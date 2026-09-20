@@ -35,7 +35,7 @@ function Entreprises() {
       />
 
       <section className="mx-auto max-w-6xl px-6 pb-24">
-        <div className="rule-top grid gap-12 pt-12 md:grid-cols-[0.85fr_1.15fr]">
+        <div className="rule-top grid gap-10 md:gap-12 pt-12 md:grid-cols-[0.85fr_1.15fr]">
           <h2 className="text-3xl leading-tight md:text-4xl">Pourquoi me contacter&nbsp;?</h2>
           <div className="space-y-6 border border-primary/10 bg-primary p-8 text-lg leading-relaxed text-primary-foreground shadow-2xl md:p-12 md:text-xl">
             <p>
@@ -54,7 +54,7 @@ function Entreprises() {
       </section>
 
       <section className="mx-auto max-w-6xl px-6 pb-24">
-        <div className="rule-top grid gap-12 pt-12 md:grid-cols-[0.85fr_1.15fr]">
+        <div className="rule-top grid gap-10 md:gap-12 pt-12 md:grid-cols-[0.85fr_1.15fr]">
           <h2 className="text-3xl leading-tight md:text-4xl">Ma façon de travailler&nbsp;:</h2>
           <div className="space-y-6 border border-primary/10 bg-primary p-8 text-lg leading-relaxed text-primary-foreground shadow-2xl md:p-12 md:text-xl">
             <p>
@@ -73,7 +73,7 @@ function Entreprises() {
       </section>
 
       <section className="mx-auto max-w-6xl px-6 pb-24">
-        <div className="rule-top grid gap-12 pt-12 md:grid-cols-[0.85fr_1.15fr]">
+        <div className="rule-top grid gap-10 md:gap-12 pt-12 md:grid-cols-[0.85fr_1.15fr]">
           <div>
             <h2 className="text-3xl leading-tight md:text-4xl">Parler de votre besoin&nbsp;:</h2>
             <p className="mt-4 max-w-md leading-relaxed text-muted-foreground">
