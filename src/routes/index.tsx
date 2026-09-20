@@ -200,13 +200,13 @@ function Home() {
       <section className="mx-auto max-w-6xl px-6 pb-24">
         <div className="rule-top grid gap-12 pt-12 md:grid-cols-[0.4fr_1.6fr]">
           <h2 className="text-2xl md:text-3xl">Travaux</h2>
-          <div>
-            <p className="text-sm text-muted-foreground">Mémoire de recherche</p>
-            <p className="mt-2 max-w-2xl text-lg leading-relaxed">
+          <div className="max-w-2xl bg-primary p-7 text-primary-foreground md:p-10">
+            <p className="text-sm uppercase tracking-[0.2em] text-sand">Mémoire de recherche</p>
+            <p className="mt-3 text-lg leading-relaxed">
               Leadership authentique, engagement au travail et épanouissement des employés du
               secteur bancaire.
             </p>
-            <p className="mt-10 text-sm text-muted-foreground">
+            <p className="mt-8 text-sm text-primary-foreground/70">
               Exercice en cabinet à {SITE.city} depuis 2020 · N° RPPS {SITE.rpps} · N° ADELI{" "}
               {SITE.adeli}
             </p>
@@ -216,16 +216,16 @@ function Home() {
 
       <section className="mx-auto max-w-6xl px-6 pb-24">
         <p className="eyebrow">Domaines d'accompagnement</p>
-        <div className="mt-10 grid gap-px bg-border sm:grid-cols-2 lg:grid-cols-4">
+        <div className="mt-10 grid gap-px bg-primary-foreground/20 sm:grid-cols-2 lg:grid-cols-4">
           {EXPERTISES.map((item) => (
             <Link
               key={item.title}
               to={item.href}
-              className="group bg-background p-7 transition-colors hover:bg-secondary/70"
+              className="group bg-primary p-7 text-primary-foreground transition-colors hover:bg-primary/90"
             >
-              <h3 className="text-lg leading-snug">{item.title}</h3>
-              <p className="mt-3 text-sm leading-relaxed text-muted-foreground">{item.text}</p>
-              <span className="link-underline mt-5 inline-block text-sm">En savoir plus <span aria-hidden="true">→</span></span>
+              <h3 className="text-lg leading-snug text-primary-foreground">{item.title}</h3>
+              <p className="mt-3 text-sm leading-relaxed text-primary-foreground/80">{item.text}</p>
+              <span className="link-underline mt-5 inline-block text-sm text-sand">En savoir plus <span aria-hidden="true">→</span></span>
             </Link>
           ))}
         </div>
