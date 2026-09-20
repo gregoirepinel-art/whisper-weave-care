@@ -9,14 +9,14 @@ declare global {
   }
 }
 
-const measurementId = import.meta.env.VITE_LOVABLE_CONNECTOR_GOOGLE_ANALYTICS_API_KEY;
+const measurementId = import.meta.env["VITE_LOVABLE_CONNECTOR_GOOGLE_ANALYTICS_API_KEY"];
 
 function enableAnalytics() {
   if (!measurementId || document.querySelector(`script[data-ga-id="${measurementId}"]`)) return;
   const script = document.createElement("script");
   script.async = true;
   script.src = `https://www.googletagmanager.com/gtag/js?id=${measurementId}`;
-  script.dataset.gaId = measurementId;
+  script.dataset["gaId"] = measurementId;
   document.head.appendChild(script);
   window.dataLayer = window.dataLayer ?? [];
   window.dataLayer.push(["js", new Date()]);

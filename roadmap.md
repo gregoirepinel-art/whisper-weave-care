@@ -15,3 +15,10 @@
 - [ ] Notification e-mail à chaque message du formulaire (nécessite la mise en place de l'envoi d'e-mails).
 - [ ] Vérifier le lien Doctolib (fiche « Joué-lès-Tours » alors que le cabinet est à Saint-Avertin).
 - [ ] Recevoir les informations d'assurance RC professionnelle.
+- [x] Ajouter les conditions générales d'utilisation.
+- [x] Ajouter le sitemap et sa déclaration dans robots.txt.
+- [x] Compresser les images et créer un visuel de partage 1200 × 630.
+- [x] Mettre la page 404 en français.
+- [x] Renforcer le formulaire avec validation côté serveur et champ anti-spam.
+- [x] Ajouter le consentement préalable à Google Analytics et à la carte Google.
+- [ ] Relier la propriété Google Analytics (connexion refusée lors de la configuration).
