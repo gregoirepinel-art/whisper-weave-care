@@ -91,12 +91,13 @@ function Home() {
 
         </div>
 
-        <figure className="rise relative">
-          <span
-            aria-hidden="true"
-            className="absolute -bottom-5 -left-5 -z-10 hidden h-28 w-28 bg-sand md:block"
-          />
-          <img
+        <figure className="rise">
+          <div className="relative">
+            <span
+              aria-hidden="true"
+              className="absolute -bottom-5 -left-5 -z-10 hidden h-28 w-28 bg-sand md:block"
+            />
+            <img
             src={portrait.url}
             alt="Portrait de Karen Pinel, psychologue à Saint-Avertin"
             className="aspect-[3/4] w-full object-cover"
@@ -104,7 +105,8 @@ function Home() {
             width="608"
             height="909"
             fetchPriority="high"
-          />
+            />
+          </div>
           <figcaption className="mt-4 text-sm text-muted-foreground">
             Karen Pinel — {SITE.role}
           </figcaption>
@@ -141,7 +143,7 @@ function Home() {
           >
             <span
               aria-hidden="true"
-              className="pointer-events-none absolute -top-6 right-4 font-display text-[5.5rem] leading-none text-sand/20"
+              className="pointer-events-none absolute right-5 top-6 font-display text-[5rem] leading-none text-sand/20"
             >
               01
             </span>
@@ -163,7 +165,7 @@ function Home() {
           >
             <span
               aria-hidden="true"
-              className="pointer-events-none absolute -top-6 right-4 font-display text-[5.5rem] leading-none text-sand/20"
+              className="pointer-events-none absolute right-5 top-6 font-display text-[5rem] leading-none text-sand/20"
             >
               02
             </span>
