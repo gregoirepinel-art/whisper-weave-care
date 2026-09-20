@@ -48,7 +48,7 @@ export function ContactForm({
   if (state === "sent") {
     return (
       <div className="rule-top pt-10">
-        <p className="font-display text-2xl">Message bien reçu.</p>
+        <p className="font-sans text-xl font-medium text-foreground">Message bien reçu.</p>
         <p className="mt-3 max-w-md text-muted-foreground">
           Je vous réponds sous quelques jours ouvrés. Pour une demande urgente de rendez-vous,
           passez par Doctolib ou par téléphone.

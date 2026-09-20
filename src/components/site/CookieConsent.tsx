@@ -50,7 +50,7 @@ export function CookieConsent() {
 
   return (
     <aside aria-label="Préférences de confidentialité" className="fixed inset-x-4 bottom-24 z-[60] mx-auto max-w-2xl border border-border bg-background p-5 shadow-xl lg:bottom-6">
-      <p className="font-display text-xl">Votre confidentialité</p>
+      <p className="font-sans text-lg font-medium text-foreground">Votre confidentialité</p>
       <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
         Avec votre accord, Google Analytics mesure anonymement la fréquentation et la carte Google s'affiche. En refusant, le site reste entièrement accessible.
       </p>
