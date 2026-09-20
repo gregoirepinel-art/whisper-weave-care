@@ -139,7 +139,7 @@ function Home() {
         <div className="mx-auto grid max-w-6xl gap-px bg-primary-foreground/20 md:grid-cols-2">
           <Link
             to="/entreprises"
-            className="group relative overflow-hidden bg-primary px-6 py-16 text-foreground transition-colors hover:bg-primary/90 md:px-12 md:py-20"
+            className="group relative overflow-hidden bg-primary px-6 py-16 text-primary-foreground transition-colors hover:bg-primary/90 md:px-12 md:py-20"
           >
             <span
               aria-hidden="true"
@@ -151,8 +151,8 @@ function Home() {
               <span aria-hidden="true" className="h-0.5 w-4 bg-sand" />
               Vous, en entreprise
             </p>
-            <h2 className="mt-5 text-3xl text-foreground md:text-4xl">Intervenir dans l'organisation</h2>
-            <p className="mt-5 max-w-md leading-relaxed text-foreground/80">
+            <h2 className="mt-5 text-3xl text-primary-foreground md:text-4xl">Intervenir dans l'organisation</h2>
+            <p className="mt-5 max-w-md leading-relaxed text-primary-foreground/80">
               Enquêtes harcèlement, prévention des risques psychosociaux, formation, soutien des
               équipes.
             </p>
@@ -161,7 +161,7 @@ function Home() {
 
           <Link
             to="/particuliers"
-            className="group relative overflow-hidden bg-primary px-6 py-16 text-foreground transition-colors hover:bg-primary/90 md:px-12 md:py-20"
+            className="group relative overflow-hidden bg-primary px-6 py-16 text-primary-foreground transition-colors hover:bg-primary/90 md:px-12 md:py-20"
           >
             <span
               aria-hidden="true"
@@ -173,8 +173,8 @@ function Home() {
               <span aria-hidden="true" className="h-0.5 w-4 bg-sand" />
               Vous, à titre personnel
             </p>
-            <h2 className="mt-5 text-3xl text-foreground md:text-4xl">Consulter en TCC ou en EMDR</h2>
-            <p className="mt-5 max-w-md leading-relaxed text-foreground/80">
+            <h2 className="mt-5 text-3xl text-primary-foreground md:text-4xl">Consulter en TCC ou en EMDR</h2>
+            <p className="mt-5 max-w-md leading-relaxed text-primary-foreground/80">
               Un espace d'écoute, d'échange, d'interrogation et de compréhension. Séances individuelles et thérapie de couple.
             </p>
             <span className="link-underline mt-8 inline-block text-sm">Découvrir le suivi</span>
@@ -191,8 +191,8 @@ function Home() {
                 key={f.year + f.label}
                 className="flex flex-col gap-1 border-b border-border pb-5 sm:flex-row sm:gap-10"
               >
-                <span className="w-16 shrink-0 text-sm font-medium text-primary">{f.year}</span>
-                <span className="leading-relaxed">{f.label}</span>
+                <span className="w-20 shrink-0 font-display text-lg italic text-primary">{f.year}</span>
+                <span className="leading-relaxed text-foreground/90">{f.label}</span>
               </li>
             ))}
           </ul>
@@ -223,11 +223,15 @@ function Home() {
             <Link
               key={item.title}
               to={item.href}
-              className="group bg-primary p-7 text-foreground transition-colors hover:bg-primary/90"
+              className="group flex flex-col justify-between bg-primary p-7 text-primary-foreground transition-all hover:bg-primary/95 hover:shadow-xl"
             >
-              <h3 className="text-lg leading-snug text-foreground">{item.title}</h3>
-              <p className="mt-3 text-sm leading-relaxed text-foreground/80">{item.text}</p>
-              <span className="link-underline mt-5 inline-block text-sm text-sand">En savoir plus <span aria-hidden="true">→</span></span>
+              <div>
+                <h3 className="font-display text-xl leading-snug text-primary-foreground decoration-accent/30 group-hover:underline">{item.title}</h3>
+                <p className="mt-4 text-sm leading-relaxed text-primary-foreground/70">{item.text}</p>
+              </div>
+              <span className="mt-8 flex items-center gap-2 text-[0.7rem] font-bold uppercase tracking-widest text-sand">
+                Découvrir <span aria-hidden="true" className="transition-transform group-hover:translate-x-1">→</span>
+              </span>
             </Link>
           ))}
         </div>
