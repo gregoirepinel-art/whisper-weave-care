@@ -113,28 +113,28 @@ function Home() {
       <section className="border-y border-primary/20 bg-primary text-primary-foreground">
         <div className="mx-auto grid max-w-6xl gap-px bg-primary-foreground/15 md:grid-cols-2">
           <Link
+            to="/entreprises"
+            className="group bg-primary px-6 py-16 transition-colors hover:bg-primary/90 md:px-12 md:py-20"
+          >
+            <p className="text-[0.7rem] uppercase tracking-[0.24em] text-primary-foreground/70">01 — Vous, en entreprise</p>
+            <h2 className="mt-5 text-3xl md:text-4xl">Intervenir dans l'organisation</h2>
+            <p className="mt-5 max-w-md leading-relaxed text-primary-foreground/80">
+              Enquêtes harcèlement, prévention des risques psychosociaux, formation, soutien des
+              équipes.
+            </p>
+            <span className="link-underline mt-8 inline-block text-sm">Voir les prestations</span>
+          </Link>
+
+          <Link
             to="/particuliers"
             className="group bg-primary px-6 py-16 transition-colors hover:bg-primary/90 md:px-12 md:py-20"
           >
-            <p className="text-[0.7rem] uppercase tracking-[0.24em] text-primary-foreground/70">01 — Vous, à titre personnel</p>
+            <p className="text-[0.7rem] uppercase tracking-[0.24em] text-primary-foreground/70">02 — Vous, à titre personnel</p>
             <h2 className="mt-5 text-3xl md:text-4xl">Consulter en TCC ou en EMDR</h2>
             <p className="mt-5 max-w-md leading-relaxed text-primary-foreground/80">
               Un espace d'écoute, d'échange, d'interrogation et de compréhension. Séances individuelles et thérapie de couple.
             </p>
             <span className="link-underline mt-8 inline-block text-sm">Découvrir le suivi</span>
-          </Link>
-
-          <Link
-            to="/entreprises"
-            className="group bg-primary px-6 py-16 transition-colors hover:bg-primary/90 md:px-12 md:py-20"
-          >
-            <p className="text-[0.7rem] uppercase tracking-[0.24em] text-primary-foreground/70">02 — Vous, en entreprise</p>
-            <h2 className="mt-5 text-3xl md:text-4xl">Intervenir dans l'organisation</h2>
-            <p className="mt-5 max-w-md leading-relaxed text-primary-foreground/80">
-              Enquêtes harcèlement, prévention des risques psychosociaux, formation, coaching de
-              managers. Dix-huit ans en entreprise avant d'exercer à mon compte.
-            </p>
-            <span className="link-underline mt-8 inline-block text-sm">Voir les prestations</span>
           </Link>
         </div>
       </section>
@@ -143,26 +143,11 @@ function Home() {
         <div className="rule-top grid gap-12 pt-12 md:grid-cols-[0.4fr_1.6fr]">
           <h2 className="text-2xl md:text-3xl">Qui suis-je</h2>
           <div className="border-l-2 border-accent pl-7 text-lg leading-relaxed text-muted-foreground md:pl-10">
-            <div className="space-y-6">
-              <p>
-                J'ai été salariée pendant dix-huit ans avant de devenir psychologue du travail. C'est
-                de là que vient ma façon de travailler : je connais les contraintes réelles des
-                organisations, les jeux d'acteurs, et ce que traverse un collectif quand une situation
-                dérape.
-              </p>
-              <p>
-                Je suis là pour vous accompagner et vous conseiller dans vos situations professionnelles
-                et personnelles : transition de carrière, burn-out, confiance en soi, estime de soi,
-                affirmation de soi, communication. Ensemble, nous définissons vos objectifs et nous
-                mettons en place des méthodes et des outils adaptés afin de les atteindre : tests, jeux
-                de rôle, exercices entre les séances.
-              </p>
-              <p>
-                Si vous traversez une période de questionnement, si vous avez besoin de prendre du recul
-                ou de trouver du soutien, n'hésitez pas à me contacter pour que nous puissions
-                travailler ensemble.
-              </p>
-            </div>
+            <p>
+              Ce passé de salariée irrigue ma façon de travailler&nbsp;: je connais les contraintes
+              réelles des organisations, les jeux d'acteurs, et ce que traverse un collectif quand
+              une situation dérape.
+            </p>
           </div>
         </div>
       </section>
