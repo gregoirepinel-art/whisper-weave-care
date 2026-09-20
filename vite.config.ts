@@ -23,7 +23,7 @@ export default defineConfig({
   // runnable node server that scripts/export-static.mjs crawls to write one
   // HTML file per page into `.output/public`. The normal Lovable build
   // (cloudflare worker target) is untouched.
-  nitro: staticExport ? { preset: "node-server" } : undefined,
+  ...(staticExport ? { nitro: { preset: "node-server" } } : {}),
   vite: {
     // GitHub Pages project sites are served from a sub-path (/whisper-weave-care/).
     // Set BASE_PATH at build time in the GitHub Actions workflow; the Lovable
