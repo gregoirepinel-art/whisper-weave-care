@@ -51,10 +51,19 @@ export const Route = createFileRoute("/")({
 function Home() {
   return (
     <>
-      <div aria-hidden="true" className="h-5 w-full bg-primary" />
-      <section className="mx-auto grid max-w-6xl gap-14 px-6 pb-20 pt-8 md:grid-cols-[1.1fr_0.9fr] md:items-start md:pt-10">
+      <div className="w-full bg-primary">
+        <div className="mx-auto flex h-10 max-w-6xl items-center px-6">
+          <span className="text-[0.55rem] font-medium uppercase tracking-[0.4em] text-primary-foreground sm:text-[0.65rem]">
+            Psychologue du travail · TCC &amp; EMDR
+          </span>
+        </div>
+      </div>
+      <section className="mx-auto grid max-w-6xl gap-14 px-6 pb-20 pt-10 md:grid-cols-[1.1fr_0.9fr] md:items-start md:pt-14">
         <div>
-          <p className="eyebrow rise text-primary">Cabinet de Saint-Avertin · Tours</p>
+          <p className="rise inline-flex items-center gap-3">
+            <span aria-hidden="true" className="h-px w-10 bg-sand" />
+            <span className="eyebrow text-primary">Cabinet de Saint-Avertin · Tours</span>
+          </p>
           <h1 className="rise mt-6 text-[2.6rem] leading-[1.05] md:text-[4.2rem]">
             Prendre soin de ce&nbsp;que&nbsp;le travail et la vie{" "}
             <span className="italic text-muted-foreground">laissent en suspens.</span>
@@ -81,7 +90,11 @@ function Home() {
 
         </div>
 
-        <figure className="rise">
+        <figure className="rise relative">
+          <span
+            aria-hidden="true"
+            className="absolute -bottom-5 -left-5 -z-10 hidden h-28 w-28 bg-sand md:block"
+          />
           <img
             src={portrait.url}
             alt="Portrait de Karen Pinel, psychologue à Saint-Avertin"
@@ -96,6 +109,7 @@ function Home() {
           </figcaption>
         </figure>
       </section>
+
 
       <section className="mx-auto max-w-6xl px-6 pb-24">
         <div className="rule-top grid gap-8 pt-10 md:grid-cols-[0.4fr_1.6fr] md:gap-12 md:pt-12">
