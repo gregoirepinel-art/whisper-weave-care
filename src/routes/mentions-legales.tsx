@@ -17,6 +17,7 @@ export const Route = createFileRoute("/mentions-legales")({
       { name: "twitter:card", content: "summary" },
       { name: "robots", content: "noindex" },
     ],
+    links: [{ rel: "canonical", href: `${SITE.siteUrl}/mentions-legales` }],
   }),
   component: Mentions,
 });

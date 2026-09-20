@@ -16,6 +16,7 @@ export const Route = createFileRoute("/politique-confidentialite")({
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
     ],
+    links: [{ rel: "canonical", href: `${SITE.siteUrl}/politique-confidentialite` }],
   }),
   component: PolitiqueConfidentialite,
 });
@@ -90,9 +91,10 @@ function PolitiqueConfidentialite() {
           <div>
             <h2 className="text-xl">Cookies et mesure d'audience</h2>
             <p className="mt-3 leading-relaxed text-muted-foreground">
-              Le site n'utilise actuellement aucun outil de mesure d'audience, cookie publicitaire
-              ou traceur nécessitant votre consentement. Une bannière de consentement sera ajoutée
-              avant toute activation future d'un tel service.
+              Google Analytics peut mesurer la fréquentation du site uniquement après votre accord.
+              La carte Google est également bloquée avant ce choix. En cas de refus, aucun de ces
+              services n'est chargé et le reste du site demeure accessible. Votre choix est conservé
+              sur votre appareil et peut être modifié en supprimant les données du site dans votre navigateur.
             </p>
           </div>
 

@@ -1,7 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { PageIntro } from "@/components/site/PageIntro";
 import { FORMATIONS, SITE } from "@/lib/site";
-const portrait = { url: "/karen-pinel-portrait.jpg" };
+const portrait = { url: "/karen-pinel-portrait.webp" };
 
 const title = "Qui suis-je — Karen Pinel, psychologue à Saint-Avertin";
 const description =
@@ -16,7 +16,10 @@ export const Route = createFileRoute("/qui-suis-je")({
       { property: "og:description", content: description },
       { property: "og:image", content: SITE.ogImage },
       { name: "twitter:image", content: SITE.ogImage },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary_large_image" },
     ],
+    links: [{ rel: "canonical", href: `${SITE.siteUrl}/qui-suis-je` }],
   }),
   component: About,
 });
@@ -36,6 +39,8 @@ function About() {
           alt="Karen Pinel, psychologue du travail et thérapeute"
           className="aspect-[3/4] w-full object-cover"
           loading="lazy"
+          width="608"
+          height="909"
         />
         <div className="border-l-2 border-accent pl-7 text-lg leading-relaxed text-muted-foreground md:pl-10">
           <div className="space-y-6">

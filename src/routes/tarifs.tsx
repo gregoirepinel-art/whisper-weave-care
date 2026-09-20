@@ -15,7 +15,10 @@ export const Route = createFileRoute("/tarifs")({
       { property: "og:description", content: description },
       { property: "og:image", content: SITE.ogImage },
       { name: "twitter:image", content: SITE.ogImage },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary_large_image" },
     ],
+    links: [{ rel: "canonical", href: `${SITE.siteUrl}/tarifs` }],
   }),
   component: Tarifs,
 });

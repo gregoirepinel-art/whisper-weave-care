@@ -16,7 +16,7 @@ export const SITE = {
   adeli: "379310956",
   hours: "Du lundi au vendredi · 9h00 – 12h00 / 14h00 – 19h00",
   siteUrl: "https://karen-pinel-psychologue.fr",
-  ogImage: "https://karen-pinel-psychologue.fr/karen-pinel-signature.jpg",
+  ogImage: "https://karen-pinel-psychologue.fr/karen-pinel-partage.jpg",
   siret: "927 554 758 00015",
 } as const;
 

@@ -8,6 +8,7 @@ const contactSchema = z.object({
   phone: z.string().trim().max(40).optional().default(""),
   audience: z.enum(["particulier", "entreprise"]),
   message: z.string().trim().min(10, "Merci de détailler un peu votre demande.").max(4000),
+  website: z.string().max(0, "Envoi non autorisé.").optional().default(""),
 });
 
 export type ContactInput = z.infer<typeof contactSchema>;
