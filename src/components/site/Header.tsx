@@ -4,13 +4,11 @@ import { SITE } from "@/lib/site";
 
 const NAV = [
   { to: "/", label: "Accueil" },
-  { to: "/qui-suis-je", label: "Qui suis-je" },
   { to: "/particuliers", label: "Particuliers" },
   { to: "/entreprises", label: "Entreprises" },
   { to: "/tarifs", label: "Tarifs" },
   { to: "/faq", label: "Questions fréquentes" },
   { to: "/contact", label: "Contact" },
-
 ] as const;
 
 export function Header() {

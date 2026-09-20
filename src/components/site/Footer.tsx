@@ -36,11 +36,6 @@ export function Footer() {
             <p className="mb-3 text-[0.7rem] uppercase tracking-[0.24em] opacity-60">Le site</p>
             <ul className="space-y-1">
               <li>
-                <Link to="/qui-suis-je" className="link-underline">
-                  Qui suis-je
-                </Link>
-              </li>
-              <li>
                 <Link to="/particuliers" className="link-underline">
                   Particuliers
                 </Link>

@@ -8,7 +8,6 @@ import { dirname, join } from "node:path";
 
 const ROUTES = [
   "/",
-  "/qui-suis-je",
   "/particuliers",
   "/entreprises",
   "/tarifs",
