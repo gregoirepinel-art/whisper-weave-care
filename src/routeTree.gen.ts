@@ -17,7 +17,6 @@ import { Route as FaqRouteImport } from './routes/faq'
 import { Route as MentionsLegalesRouteImport } from './routes/mentions-legales'
 import { Route as ParticuliersRouteImport } from './routes/particuliers'
 import { Route as PolitiqueConfidentialiteRouteImport } from './routes/politique-confidentialite'
-import { Route as QuiSuisJeRouteImport } from './routes/qui-suis-je'
 import { Route as TarifsRouteImport } from './routes/tarifs'
 
 const IndexRoute = IndexRouteImport.update({
@@ -61,11 +60,6 @@ const PolitiqueConfidentialiteRoute =
     path: '/politique-confidentialite',
     getParentRoute: () => rootRouteImport,
   } as any)
-const QuiSuisJeRoute = QuiSuisJeRouteImport.update({
-  id: '/qui-suis-je',
-  path: '/qui-suis-je',
-  getParentRoute: () => rootRouteImport,
-} as any)
 const TarifsRoute = TarifsRouteImport.update({
   id: '/tarifs',
   path: '/tarifs',
@@ -81,7 +75,6 @@ export interface FileRoutesByFullPath {
   '/mentions-legales': typeof MentionsLegalesRoute
   '/particuliers': typeof ParticuliersRoute
   '/politique-confidentialite': typeof PolitiqueConfidentialiteRoute
-  '/qui-suis-je': typeof QuiSuisJeRoute
   '/tarifs': typeof TarifsRoute
 }
 export interface FileRoutesByTo {
@@ -93,7 +86,6 @@ export interface FileRoutesByTo {
   '/mentions-legales': typeof MentionsLegalesRoute
   '/particuliers': typeof ParticuliersRoute
   '/politique-confidentialite': typeof PolitiqueConfidentialiteRoute
-  '/qui-suis-je': typeof QuiSuisJeRoute
   '/tarifs': typeof TarifsRoute
 }
 export interface FileRoutesById {
@@ -106,7 +98,6 @@ export interface FileRoutesById {
   '/mentions-legales': typeof MentionsLegalesRoute
   '/particuliers': typeof ParticuliersRoute
   '/politique-confidentialite': typeof PolitiqueConfidentialiteRoute
-  '/qui-suis-je': typeof QuiSuisJeRoute
   '/tarifs': typeof TarifsRoute
 }
 export interface FileRouteTypes {
@@ -120,7 +111,6 @@ export interface FileRouteTypes {
     | '/mentions-legales'
     | '/particuliers'
     | '/politique-confidentialite'
-    | '/qui-suis-je'
     | '/tarifs'
   fileRoutesByTo: FileRoutesByTo
   to:
@@ -132,7 +122,6 @@ export interface FileRouteTypes {
     | '/mentions-legales'
     | '/particuliers'
     | '/politique-confidentialite'
-    | '/qui-suis-je'
     | '/tarifs'
   id:
     | '__root__'
@@ -144,7 +133,6 @@ export interface FileRouteTypes {
     | '/mentions-legales'
     | '/particuliers'
     | '/politique-confidentialite'
-    | '/qui-suis-je'
     | '/tarifs'
   fileRoutesById: FileRoutesById
 }
@@ -157,7 +145,6 @@ export interface RootRouteChildren {
   MentionsLegalesRoute: typeof MentionsLegalesRoute
   ParticuliersRoute: typeof ParticuliersRoute
   PolitiqueConfidentialiteRoute: typeof PolitiqueConfidentialiteRoute
-  QuiSuisJeRoute: typeof QuiSuisJeRoute
   TarifsRoute: typeof TarifsRoute
 }
 
@@ -219,13 +206,6 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof PolitiqueConfidentialiteRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/qui-suis-je': {
-      id: '/qui-suis-je'
-      path: '/qui-suis-je'
-      fullPath: '/qui-suis-je'
-      preLoaderRoute: typeof QuiSuisJeRouteImport
-      parentRoute: typeof rootRouteImport
-    }
     '/tarifs': {
       id: '/tarifs'
       path: '/tarifs'
@@ -245,7 +225,6 @@ const rootRouteChildren: RootRouteChildren = {
   MentionsLegalesRoute: MentionsLegalesRoute,
   ParticuliersRoute: ParticuliersRoute,
   PolitiqueConfidentialiteRoute: PolitiqueConfidentialiteRoute,
-  QuiSuisJeRoute: QuiSuisJeRoute,
   TarifsRoute: TarifsRoute,
 }
 export const routeTree = rootRouteImport
